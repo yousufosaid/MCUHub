@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daredevil: Born Again</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <header>
+    <h2 class="logo" onclick='window.location.href="marvelnews.html"'>MCU Hub</h2>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+      </ul> </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+   const website = ["file:///C:/Users/yousu/si.html", 
+  "file:///C:/Users/yousu/lk.html",
+  "file:///C:/Users/yousu/tm.html",
+  "file:///C:/Users/yousu/eo.html",
+  "file:///C:/Users/yousu/ir.html",
+  "file:///C:/Users/yousu/dp.html",
+  "file:///C:/Users/yousu/dd.html",
+  "file:///C:/Users/yousu/ca.html",
+  "file:///C:/Users/yousu/ag.html",
+  "file:///C:/Users/yousu/tb.html",
+  "file:///C:/Users/yousu/bl.html",
+  "file:///C:/Users/yousu/ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+  
+    </script>
+    <body>
+        <div class="details7">
+            <h2>Daredevil: Born Again</h2>
+            <div class="row">
+                <div class="column"><div class="image"><img src="https://cdn.marvel.com/content/1x/sdcc_daredevilbornagain.jpg" width="300px" height="400px"></div></div>          
+                <div class="column"><img src="trailer2.png"></div>
+            </div>
+            <button type="button" class="collapsible7">Description</button>
+            <div class="content7">
+                <h5 >Description: In the highly anticipated Daredevil: Born Again series, fans are thrilled to witness the long-awaited return of Matt Murdock, the iconic vigilante known as Daredevil, and his arch-nemesis, Wilson Fisk, also known as the Kingpin. Set in the gritty streets of Hell's Kitchen, this 18-episode saga picks up after the events of the Echo storyline, offering an enthralling continuation of the Daredevil universe.</h5>
+            </div>
+            <button type="button" class="collapsible7">Cast</button>
+            <div class="content7">
+                <h5 style="float: left;">Cast: Charlie Cox, 
+                    Sandrine Holt, 
+                    Vincent D'Onofrio, 
+                    Alaqua Cox, 
+                    Michael Gandolfini, 
+                    Jon Bernthal, 
+                    Margarita Levieva, 
+                    Nikki M. James, 
+                    </h5>
+            </div>
+            <button type="button" class="collapsible7">Trailers & Photos</button>
+            <div class="content7">
+                <div class="row">
+                </div>
+        </div>
+        <button type="button" class="collapsible7">Related Movies & TV Shows</button>
+            <div class="content7">
+                <div class="row">
+                    <div class="column"><div class="image"><img onclick="window.location.href='file:///C:/Users/yousu/eo.html';" src="https://pics.filmaffinity.com/Echo_TV_Series-857472327-large.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Daredevil_season_1_poster.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="Downloads/HAWK.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="https://cdn.marvel.com/content/1x/spider-mannowayhome_lob_crd_03.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="https://cdn.marvel.com/content/1x/shehulk_lob_crd_04.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
+                </div>
+            </div>
+            <button type="button" class="collapsible7">Rumors</button>
+            <div class="content7">
+                <h5 class="rumor">- Luke Cage and Iron Fist are not in Daredevil: Born Again at all, not even mentioned
+                                                <br  />
+                                                - Vincent D'Onofrio reveals 'Daredevil: Born Again' Season 2 already planned
+                                                <br  />
+                                                -Punisher to receive a new show after Daredevil Born Again
+                                                <br  />
+                                                -DAREDEVIL: BORN AGAIN was filming a New Years Eve scene in Times Square! The scene features Wilson Fisk and Pym Van Dyne merchandise on full display.3
+                                                <br  />
+                                                -Wilson Fisk has found a replacement for James Wesley in #DaredevilBornAgain.
+                                                <br  />
+                                                -Hunter Doohan May Be Cast In 'Daredevil: Born Again'
+                                                <br  />
+                                                In Daredevil Born Again, Jessica Jones will be in search for Kilgrave's illegitimate children who inherited his powers
+                                              </h5>
+            </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible7");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+    </body>
+ <footer class="footer">
+     <div class="containerFooter">
+      <div class="rowFooter">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="marvelnews.html">Home</a></li>
+            <li><a href="upcoming.html">Upcoming Projects</a></li>
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="animation.html">Animation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="si.html">Secret Invasion</a></li>
+            <li><a href="lk.html">Loki Season 2</a></li>
+            <li><a href="tm.html">The Marvels</a></li>
+            <li><a href="eo.html">Echo</a></li>
+            <li><a href="dp.html">Deadpool 3</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="contactme@mcuhub.com"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-220%,-50%); border-color: transparent;">
+            <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-220%,-50%); border-color: transparent;">
+            <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-220%,-50%); border-color: transparent;">
+            <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-220%,-50%); border-color: transparent;">
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer>
+</html>
+</html>

@@ -1,0 +1,1226 @@
+
+/* Default styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: avenger;
+}
+
+@font-face {
+    font-family: avenger;
+    src: url(AvengeanceHeroicAvengerBold-MM2J.ttf);
+}
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+#search-input {
+  width: 260px;
+  height: 20px;
+  padding: 10px;
+  border: 3px solid #541322;
+  border-radius: 15px;
+  margin-right: 10px;
+  color: #541322;
+}
+
+#search-input::placeholder{
+  color: #541322;
+}
+
+#suggestions-list {
+  position: absolute;
+  z-index:2;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  max-height: fit-content;
+  overflow-y:scroll;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none; /* Hide suggestions by default */
+}
+
+#suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#suggestions-list li:hover {
+  background-color: #f4f4f4;
+}
+
+.search-button{
+background-color: transparent;
+  width: fit-content;
+  height: fit-content;
+  border: #ffffff;
+  margin-right: 0px;
+}
+
+
+  body {
+    background-image: url("https://wallpaperaccess.com/full/1260080.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .logo{
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  /* Header */
+  
+  header {
+    margin-top: 0px; 
+    background-color: #ffffff; 
+    color: #541322;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'avenger';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 150px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+
+
+h1 {
+    margin-left: 150px;
+    font-family: 'avenger';
+    border-radius: 30px;
+    font-size:xx-large;
+    font-weight: bolder;
+  }
+h2{
+  text-align: center;
+  font-size:xx-large;
+  color: #541322;
+  margin-top: 30px;
+  font-family: avenger;
+}
+
+
+  a{
+    font-size: large;
+  }
+  
+  /* Navigation */
+  
+  nav {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color:#541322;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 30px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    margin-left: 35px;
+    display: block;
+    color: #541322;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a.home:hover {
+    color: #ffffff;
+    background-image:url("https://wallpaperaccess.com/full/1260080.jpg");
+    border-radius: 30px;
+  }
+
+  nav a.upcoming:hover {
+      color: #ffffff;
+      background-image:url("Downloads/FD7os8KXsAAQjCl.jpg");
+      border-radius: 30px;
+    }
+
+    nav a.Latest:hover {
+      color: #ffffff;
+      background-image:url("desktop-wallpaper-backgrounds-template-aesthetic-backgrounds-template-aesthetic-marvel-aesthetic-purple.jpg");
+      border-radius: 30px;
+    }
+
+    nav a.box:hover {
+      color: #ffffff;
+      background-image:url("Downloads/a\ spider-man\ money.JPG");
+      border-radius: 30px;
+    }
+
+    nav a.animation:hover {
+      color: #ffffff;
+      background-image:url("Downloads/221213152642-01-spiderman-across-the-spider-verse-2023.jpg");
+      border-radius: 30px;
+    }
+  
+  nav a.active {
+    color: #ffffff;
+    background-color:#541322;
+    border-radius: 30px;
+  }
+  
+  container {
+    width:fit-content;
+    height:fit-content;
+    border-radius: 30px;
+    background: #890000;
+    }
+  .swiper{
+    align-items: center;
+    border-width: 10px;
+    width: 1040px;
+    height: 460px;
+    }
+  .swiper-slide img{
+    margin-left: 15px;
+    width: 95%;
+    height: 400px;
+    /*filter: blur(4px);*/
+   /*-webkit-filter:blur(4px);*/
+   border-style: solid;
+   border-width: 10px;
+    border-radius: 30px;
+    border-color: #ffffff;
+    opacity: 1;
+    }
+
+ .swiper-slide .high{
+  margin-right: 20px;
+  text-align: center;
+  width: 95%;
+  font-family: avenger;
+  font-size: 20px;
+  color: white;
+  border-radius: 30px;
+  background-color: green;
+ }
+
+ .swiper-slide .medium{
+  float: left;
+  text-align: center;
+  width: 65%;
+  font-family: avenger;
+  font-size: 20px;
+  color: white;
+  border-radius: 30px;
+  background-color: rgb(193, 146, 26);
+ }
+
+#medium:hover img{
+ border-color: goldenrod;
+ }
+
+ #high:hover img{
+  border-color: darkgreen;
+  }
+  #high:hover .caption2{
+    background-color: darkgreen;
+    }
+
+ #medium:hover .caption2{
+  background-color: goldenrod;
+  }
+  
+    .section {
+      background-color: #f2f2f2;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    .swiper-slide h3 {
+      text-align: center;
+      font-size: 60px;
+      font-family: avenger;
+      color: transparent;
+      font-weight: bold;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+    }
+    .column {
+      position: relative;
+      float:left;
+      display: flex;
+      align-items: center;
+    }
+    .image-container {
+      position: relative; /* Add this line to make the caption position relative to the image container */
+    }
+    .container{
+      position: relative;
+      border-radius: 0px;
+    }
+
+    .image{
+      position: relative;
+    }
+    .caption{
+      position: absolute;
+      font-family: avenger;
+      bottom: 5px;
+      left: 0;
+      width: 95%;
+      color: #ffffff;
+      background-color: #541322;
+      padding: 10px;
+      font-size: 17px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    .caption2{
+      position: absolute;
+      font-family: avenger;
+      bottom: 5px;
+      left: 0;
+      width: 400px;
+      color: white;
+      background-color:  #541322;
+      padding: 5px;
+      font-size: 17px;
+      text-align: left;
+      opacity: 1;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      transition: opacity 0.3s ease;
+    }
+    .release-date{
+      position: absolute;
+      font-family: avenger;
+      border-radius: 10px;
+      bottom:16px;
+      left: 15px;
+      width: 95%;
+      background-color: #ffffff;
+      color:#541322;
+      padding: 5px;
+      font-size: 90px;
+      text-shadow: #890000;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .headline{
+      opacity: 1;
+      position: absolute;
+      font-family: avenger;
+      border-radius: 10px;
+      bottom: 10%;
+      width: 90%;
+      color:#ffffff;
+      padding: 0px;
+      font-size: 40px;
+      text-shadow: #890000;
+      text-align: center;
+      margin-left: 40px;
+      transition: opacity 0.3s ease;
+    }
+
+    .info{
+      position: absolute;
+      font-family: avenger;
+      border-radius: 10px;
+      bottom: 10px;
+      left: 25px;
+      width: 95%;
+      background-color: #ffffff;
+      color:#541322;
+      padding: 0px;
+      font-size: 40px;
+      text-shadow: #890000;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .total{
+      position: absolute;
+      font-family: avenger;
+      bottom: 5px;
+      right: inherit;
+      width: 100%;
+      background-color: #ffffff;
+      color: #541322;
+      padding: 0px;
+      font-size: 55px;
+      text-shadow: #890000;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .image:hover .caption {
+      opacity: 1;
+    }
+    .image:hover .caption2 {
+      opacity: 1;
+      color: #541322;
+    }
+    .image-container:hover .release-date{
+      opacity: 1;
+    }
+    .image-container:hover .info{
+      opacity: 1;
+    }
+    .container:hover .total{
+      opacity: 1;
+    }
+    .column img{
+      border-radius: 15px;
+      border-color: #541322;
+      border-style: solid;
+      border-width: 7.5px;
+      margin: 0px;
+    }
+    .column h3{
+      text-align: left;
+      font-size: 20px;
+      font-family: avenger;
+      color:#541322;
+      font-weight: bold;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+    }
+    .row{
+      align-items: center;
+      margin-left: 10px;
+      margin-top: 0px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      margin-top: 0%;
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .object{
+      margin-left: 225px;
+      border-radius: 0px;
+      display: flex;
+      align-items: center;
+    }
+
+   .object img{
+      margin: 0px;
+      border-radius: 0px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #f3f3f3;
+    }
+
+ h5{
+      font-family: avenger;
+      color: #000000;
+      font-size: 20px;
+      float: right;
+      margin-left: 20px;
+    }
+
+
+    h6{
+      font-family: avenger;
+      color: #f2f2f2;
+      transform: translate(88%,-150%);
+    }
+
+    .more{
+      width: 1263px;
+      height: 100px;
+      background-color: #541322;
+      color: white;
+      border: #ffffff solid;
+      border-radius: 30px;
+      font-size: xx-large;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .details{
+      padding: 0.01%;
+      background-image: url(Downloads/dark-green-abstract-background_1100-129.png);
+      width: 1263px;
+      height: fit-content;
+      margin-top: 5px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .details2{
+      padding: 0.01%;
+      background-image: url(Downloads/gradient-blurred-olive-green-olive-yellow-green-gold-gradient-wallpaper-background_172010-1381.png);
+      width: 1263px;
+      height: fit-content;
+      margin-top: 5px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .details3{
+      padding: 0.01%;
+      background-image: url(Downloads/High_resolution_wallpaper_background_ID_77700326760\ \(1\).jpg);
+      width: 1263px;
+      height: fit-content;
+      margin-top: 5px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .details4{
+      padding: 0.01%;
+      background-color: #000000;
+      width: 1263px;
+      height: fit-content;
+      margin-top: 5px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .details5{
+      padding: 0.01%;
+      background-color: #da0808;
+      width: 1263px;
+      height: fit-content;
+      margin-top: 5px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .details6{
+      padding: 0.01%;
+      background-image: url("https://cdn.wallpapersafari.com/94/76/PHsOXh.jpg");
+      width: 1263px;
+      height: fit-content;
+      margin-top: 5px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .details7{
+      padding: 0.01%;
+      background-image: url("https://cdn.wallpapersafari.com/94/76/PHsOXh.jpg");
+      width: 1263px;
+      height: fit-content;
+      margin-top: 5px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .details8{
+      padding: 0.01%;
+      background-image: url("Downloads/red-side-gradient-background\ \(1\).jpg");
+      width: 1263px;
+      height: fit-content;
+      margin-top: 5px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .details9{
+      padding: 0.01%;
+      background-image: url("Downloads/agatha\ \(1\).jpg");
+      width: 1263px;
+      height: fit-content;
+      margin-top: 5px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .details10{
+      padding: 0.01%;
+      background-image: url("Downloads/thun\ \(1\).jpg");
+      width: 1263px;
+      height: fit-content;
+      margin-top: 5px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .details11{
+      padding: 0.01%;
+      background-image: url("Downloads/blad\ \(1\).jpg");
+      width: 1263px;
+      height: fit-content;
+      margin-top: 5px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .details12{
+      padding: 0.01%;
+      background-image: url("Downloads/ff.png");
+      width: 1263px;
+      height: fit-content;
+      margin-top: 5px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .details13{
+      padding: 0.01%;
+      background-image: url("Downloads/awars.jpg");
+      width: 1263px;
+      height: fit-content;
+      margin-top: 5px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .details h2{
+      color: darkgreen;
+    }
+
+    .details2 h2{
+      color: rgb(4, 63, 4);
+    }
+
+    .details4 h2{
+      color: goldenrod;
+    }
+
+    .details5 h2{
+      color: rgb(218, 209, 32);
+    }
+
+    .details6 h2{
+      color: rgb(0, 0, 0);
+    }
+
+    .details7 h2{
+      color: rgb(88, 86, 86);
+    }
+
+    .details8 h2{
+      color: rgb(238, 238, 238);
+    }
+
+    .details9 h2{
+      color: rgb(0, 0, 0);
+    }
+
+    .details10 h2{
+      color: rgb(0, 0, 0);
+    }
+
+    .details11 h2{
+      color: rgb(92, 0, 0);
+    }
+
+    .details12 h2{
+      color: rgb(255, 255, 255);
+    }
+
+    .details13 h2{
+      color: rgb(19, 51, 49);
+    }
+
+
+    .details img{
+      margin-left: 30px;
+      border: solid 5px darkgreen;
+    }
+
+    .details2 img{
+      margin-left: 30px;
+      border: solid 5px rgb(1, 44, 5);
+    }
+
+    .details3 img{
+      margin-left: 30px;
+      border: solid 5px rgb(1, 12, 44);
+    }
+
+    .details4 img{
+      margin-left: 30px;
+      border: solid 5px rgb(201, 172, 8);
+    }
+
+    .details5 img{
+      margin-left: 30px;
+      border: solid 5px rgb(201, 172, 8);
+    }
+
+    .details6 img{
+      margin-left: 30px;
+      border: solid 5px rgb(0, 0, 0);
+    }
+
+    .details7 img{
+      margin-left: 30px;
+      border: solid 5px rgb(101, 98, 98);
+    }
+
+    .details8 img{
+      margin-left: 30px;
+      border: solid 5px rgb(177, 48, 48);
+    }
+
+    .details9 img{
+      margin-left: 30px;
+      border: solid 5px rgb(67, 8, 82);
+    }
+
+    .details10 img{
+      margin-left: 30px;
+      border: solid 5px rgb(176, 87, 19);
+    }
+
+    .details11 img{
+      margin-left: 30px;
+      border: solid 5px rgb(176, 19, 19);
+    }
+
+    .details12 img{
+      margin-left: 30px;
+      border: solid 5px rgb(252, 252, 252);
+    }
+
+    .details13 img{
+      margin-left: 30px;
+      border: solid 5px rgb(18, 78, 81);
+    }
+
+    .green{
+      border: solid darkgreen 5px;
+      border-radius: 15px;
+      margin-left: 30px;
+    }
+
+    .blue{
+      border: solid darkblue 5px;
+      border-radius: 15px;
+      margin-left: 30px;
+    }
+
+    .collapsible {
+      margin-top: 20px;
+      background-image: url(Downloads/dark-green-abstract-background_1100-129.png);
+      color: rgb(7, 127, 69);
+      font-family: avenger;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border-radius: 15px;
+      border-color: #12b772;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .collapsible2 {
+      margin-top: 20px;
+      background-image: url(Downloads/gradient-blurred-olive-green-olive-yellow-green-gold-gradient-wallpaper-background_172010-1381.png);
+      color: rgb(6, 78, 6);
+      font-family: avenger;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border-radius: 15px;
+      border-color: #12b772;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .collapsible3 {
+      margin-top: 20px;
+      background-image: url(Downloads/High_resolution_wallpaper_background_ID_77700326760\ \(1\).jpg);
+      color: rgb(6, 22, 78);
+      font-family: avenger;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border-radius: 15px;
+      border-color: #b71212;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .collapsible4 {
+      margin-top: 20px;
+      background-color: goldenrod;
+      color: black;
+      font-family: avenger;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border-radius: 15px;
+      border-color: #282720;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .collapsible5 {
+      margin-top: 20px;
+      background-color: goldenrod;
+      color: rgb(206, 22, 22);
+      font-family: avenger;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border-radius: 15px;
+      border-color: #b9b031;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .collapsible6 {
+      margin-top: 20px;
+      background-image: url("https://cdn.wallpapersafari.com/94/76/PHsOXh.jpg");
+      color: rgb(206, 22, 22);
+      font-family: avenger;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border-radius: 15px;
+      border-color: #b93131;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .collapsible7 {
+      margin-top: 20px;
+      background-color: grey;
+      color: rgb(206, 22, 22);
+      font-family: avenger;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border-radius: 15px;
+      border-color:grey;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .collapsible8 {
+      margin-top: 20px;
+      background-image: url('cap.png');
+      color: rgb(249, 249, 249);
+      font-family: avenger;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border-radius: 15px;
+      border-color:rgb(156, 13, 13);
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .collapsible9 {
+      margin-top: 20px;
+      background-image: url('Downloads/agatha\ \(1\).jpg');
+      color: rgb(0, 0, 0);
+      font-family: avenger;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border-radius: 15px;
+      border-color:rgb(69, 5, 65);
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .collapsible10 {
+      margin-top: 20px;
+      background-image: url('Downloads/thun.jpg');
+      color: rgb(0, 0, 0);
+      font-family: avenger;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border-radius: 15px;
+      border-color:rgb(69, 39, 5);
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .collapsible11 {
+      margin-top: 20px;
+      background-image: url('Downloads/blad.jpg');
+      color: rgb(0, 0, 0);
+      font-family: avenger;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border-radius: 15px;
+      border-color:rgb(69, 39, 5);
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .collapsible12 {
+      margin-top: 20px;
+      background-image: url('Downloads/ff.png');
+      color: rgb(255, 255, 255);
+      font-family: avenger;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border-radius: 15px;
+      border-color:rgb(5, 22, 69);
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .collapsible13 {
+      margin-top: 20px;
+      background-image: url('Downloads/awars.jpg');
+      color: rgb(16, 83, 83);
+      font-family: avenger;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border-radius: 15px;
+      border-color:rgb(5, 36, 69);
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #1fbc5c;
+    }
+
+    .active, .collapsible2:hover {
+      background-color: #1fbc5c;
+    }
+
+    .active, .collapsible3:hover {
+      background-color: #4e1fbc;
+    }
+
+    .active, .collapsible4:hover {
+      background-color: #ece51e;
+    }
+    .active, .collapsible5:hover {
+      background-color: #e2ec1e;
+    }
+
+    .active, .collapsible7:hover {
+      background-color: #979793;
+    }
+    
+    .content1 {
+      width: 95%;
+      margin-left: 13px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      padding: 10px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #39de7e;
+    }
+
+    .content2 {
+      width: 95%;
+      margin-left: 13px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      padding: 10px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #9fae26;
+    }
+
+    .content3 {
+      width: 95%;
+      margin-left: 13px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      padding: 10px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #3052c2;
+    }
+
+    .content4 {
+      width: 95%;
+      margin-left: 13px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      padding: 10px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #bbd150;
+    }
+
+    .content5 {
+      width: 95%;
+      margin-left: 13px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      padding: 10px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: goldenrod;
+    }
+
+    .content6 {
+      width: 95%;
+      margin-left: 13px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      padding: 10px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: rgb(95, 84, 83);
+    }
+
+    .content7 {
+      width: 95%;
+      margin-left: 13px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      padding: 10px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: rgb(184, 67, 56);
+    }
+
+    .content8 {
+      width: 95%;
+      margin-left: 13px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      padding: 10px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: rgb(216, 209, 209);
+    }
+
+    .content9 {
+      width: 95%;
+      margin-left: 13px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      padding: 10px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: rgb(199, 121, 199);
+    }
+
+    .content10 {
+      width: 95%;
+      margin-left: 13px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      padding: 10px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: rgb(203, 138, 62);
+    }
+
+    .content11 {
+      width: 95%;
+      margin-left: 13px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      padding: 10px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: rgb(203, 62, 62);
+    }
+    
+    .content12 {
+      width: 95%;
+      margin-left: 13px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      padding: 10px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: rgb(169, 205, 235);
+    }
+
+    .content13 {
+      width: 95%;
+      margin-left: 13px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      padding: 10px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: rgb(116, 213, 220);
+    }
+    
+    .rumor{
+      float: left;
+      filter: blur(4px);
+      -webkit-filter: blur(4px);
+    }
+
+    .rumor:hover{
+      filter: blur(0px);
+      -webkit-filter: blur(0px);
+      transition: 2200ms;
+    }
+
+    .containerFooter{
+      max-width: 1170px;
+      margin:auto;
+    }
+    .rowFooter{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    ul{
+      list-style: none;
+    }
+    .footer{
+      background-color: #ffffff;
+        padding: 70px 0;
+      margin-top: 10px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .footer-col{
+       width: 20%;
+       padding: 0 10px;
+       margin-left: 30px;
+    }
+    .footer-col h4{
+      font-size: 18px;
+      color: #541322;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+    }
+    .footer-col h4::before{
+      content: '';
+      position: absolute;
+      left:0;
+      bottom: -10px;
+      background-color: #e91e63;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #e91e63;
+      text-decoration: none;
+      font-weight: 300;
+      color: #541322;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+    }
+    .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: #541322;
+      margin:0 0px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+      color: #24262b;
+      background-color: #631729;
+    }
+
+
+    /*responsive*/
+    @media(max-width: 767px){
+      .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+    @media(max-width: 574px){
+      .footer-col{
+        width: 100%;
+    }
+    }
+    .privacyT{
+      margin: auto;
+      width: 50%;
+      height: 1000px;
+      color: #541322;
+      background-color: white;
+      margin-top: 50px;
+      border-radius: 30px;
+      text-align: center;
+    }
+
+
+
+    

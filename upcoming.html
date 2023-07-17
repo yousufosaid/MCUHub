@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCU Hub</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <link rel="stylesheet" href="upcoming.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <header>
+    <h2 class="logo" onclick='window.location.href="marvelnews.html"'>MCU Hub</h2>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+      </ul> </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+ 
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+    "Secret Invasion ",
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+  
+    </script>
+<body>
+  <h2>Next Project</h2>
+  <div class="timer" onclick="window.location.href='File:///C:\Users/yousu/lk.html'">
+    <p id="demo"></p>
+  </div>
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("October 06, 2023 03:37:25").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+      // Get today's date and time
+      var now = new Date().getTime();
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+    
+    </body>
+  <h2>Upcoming Movies & TV Shows</h2>
+    <div class="year">
+      <button class="si"  onclick="window.location.href='file:///C:/Users/yousu/si.html';"><div class="info2">June 21st 2023</div></button>
+      <button class="lk"  onclick="window.location.href='file:///C:/Users/yousu/lk.html';"><div class="info2">October 6th 2023</div></button>
+      <button class="mv"  onclick="window.location.href='file:///C:/Users/yousu/tm.html';"><div class="info2">November 11th 2023</div></button>
+      <button class="eo"  onclick="window.location.href='file:///C:/Users/yousu/eo.html';"><div class="info2">November 29th 2023</div></button>
+      <button class="ir"  onclick="window.location.href='file:///C:/Users/yousu/ir.html';"><div class="info2">Spring 2024</div></button>
+      <button class="dp"  onclick="window.location.href='file:///C:/Users/yousu/dp.html';"><div class="info2">May 3rd 2024</div></button>
+      <button class="dd"  onclick="window.location.href='file:///C:/Users/yousu/dd.html';"><div class="info2">Summer 2024</div></button>
+      <button class="ca"  onclick="window.location.href='file:///C:/Users/yousu/ca.html';"><div class="info2">July 26th 2024</div></button>
+      <button class="ag"  onclick="window.location.href='file:///C:/Users/yousu/ag.html';"><div class="info2">Fall 2024</div></button>
+      <button class="tb"  onclick="window.location.href='file:///C:/Users/yousu/tb.html';"><div class="info2">December 20th 2024</div></button>
+      <button class="bl"  onclick="window.location.href='file:///C:/Users/yousu/bl.html';"><div class="info2">Febuary 14th 2025</div></button>
+      <button class="ff"  onclick="window.location.href='file:///C:/Users/yousu/ff.html';"><div class="info2">May 2nd 2025</div></button>
+    </div>
+    <h2>TBD & Rumored Projects</h2>
+    <div class="container">
+      <!-- Slider main container -->
+      <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><div class="image-container"><img onclick="window.location.href='file:///C:/Users/yousu/aw.html';" src="https://depor.com/resizer/3Hlb7XI4ojaKTy9mZKGDlLjPdpU=/980x528/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/EKIMZMZAKFHKHC6GV7LMELQT3Y.jpeg"><div class="info">Armor Wars: Rumored to release in 2025 </div></div></div>
+          <div class="swiper-slide"><div class="image-container"><img src="Downloads/z27ujlkl0qp61.png"><div class="info">Spider-Man 4: Rumored to release in 2025</div></div></div>
+          <div class="swiper-slide"><div class="image-container"><img src="https://www.tvinsider.com/wp-content/uploads/2022/08/wonder-man-marvel-studios.jpg"><div class="info">WonderMan Series: Rumored to release in 2025</div></div></div>
+          <div class="swiper-slide"><div class="image-container"><img src="Downloads/marvel-studios-shang-chi_logo.png"><div class="info">Shang-Chi 2: Rumored to release before Avengers: Kang Dynasty</div></div></div>
+          <div class="swiper-slide"><div class="image-container"><img src="wwh_new.jpg"><div class="info">World War Hulk: Rumored to be in development</div></div></div>
+          <div class="swiper-slide"><div class="image-container"><img src="Nova.jpg"><div class="info">Nova Series: Rumored to release in 2025</div></div></div>
+          <div class="swiper-slide"><div class="image-container"><img src="https://m.media-amazon.com/images/M/MV5BYzIzNzkyNjgtOWQ0Mi00MzI5LWEzM2ItNTVjNTYwNGMxYjYwXkEyXkFqcGdeQXVyMTQ5OTQ1NzA0._V1_.jpg"><div class="info">Avengers: Kang Dynasty: Pushed back to May 1st 2026</div></div></div>
+          <div class="swiper-slide"><div class="image-container"><img src="Downloads/avgr.jpg"><div class="info">Avengers: Secret Wars: Release pushed back to May 6th 2027 for now.</div></div></div>
+        </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+      
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+      </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+  el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+  },
+
+});
+  </script>
+</body>
+ <footer class="footer">
+     <div class="containerFooter">
+      <div class="rowFooter">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="marvelnews.html">Home</a></li>
+            <li><a href="upcoming.html">Upcoming Projects</a></li>
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="animation.html">Animation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="si.html">Secret Invasion</a></li>
+            <li><a href="lk.html">Loki Season 2</a></li>
+            <li><a href="tm.html">The Marvels</a></li>
+            <li><a href="eo.html">Echo</a></li>
+            <li><a href="dp.html">Deadpool 3</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="contactme@mcuhub.com"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+            <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+            <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+            <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(980%,-225%);">
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer>
+</html>
+</html>

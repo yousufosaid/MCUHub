@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCU Hub</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <header>
+    <h2 class="logo" onclick='window.location.href="marvelnews.html"'>MCU Hub</h2>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+      </ul> </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+   const website = ["file:///C:/Users/yousu/si.html", 
+  "file:///C:/Users/yousu/lk.html",
+  "file:///C:/Users/yousu/tm.html",
+  "file:///C:/Users/yousu/eo.html",
+  "file:///C:/Users/yousu/ir.html",
+  "file:///C:/Users/yousu/dp.html",
+  "file:///C:/Users/yousu/dd.html",
+  "file:///C:/Users/yousu/ca.html",
+  "file:///C:/Users/yousu/ag.html",
+  "file:///C:/Users/yousu/tb.html",
+  "file:///C:/Users/yousu/bl.html",
+  "file:///C:/Users/yousu/ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+  
+    </script>
+<body>
+    <main>
+      <section>
+        <h2>Movie Ranking</h2>
+        <div class="object"><div class=" container"><img src="/Users//yousu/endgame.jpg" style="width: 800px; height: 300px;"><div class="total">1.  Avengers: Endgame  : 2.79 Billion Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://i0.wp.com/highschool.latimes.com/wp-content/uploads/2018/06/share-1.jpg?fit=1200%2C630&ssl=1" style="width: 800px; height: 300px;"><div class="total">2.  Avengers: Infinity War  : 2.04 Billion Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3b1c5f8f-1cad-49ab-a42d-2465f4941bef/df7z6yu-37d5904b-4e69-4c41-b781-5cd4db7213e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNiMWM1ZjhmLTFjYWQtNDlhYi1hNDJkLTI0NjVmNDk0MWJlZlwvZGY3ejZ5dS0zN2Q1OTA0Yi00ZTY5LTRjNDEtYjc4MS01Y2Q0ZGI3MjEzZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XQdNY04oN-7D2Fz4mwqu6msPHzqzhDx2ntY-xdYxV88" style="width: 800px; height: 300px;"><div class="total">3.  Spiderman: No Way Home  : 1.91 Billion Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://i.pinimg.com/originals/e2/20/e2/e220e2ffea9e944a48684b897beaaf56.jpg" style="width: 800px; height: 300px;"><div class="total">4. The Avengers : 1.51 Billion Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://www.wallpaperup.com/uploads/wallpapers/2016/01/05/869924/cf00ab6ad63a9cac7f850d13300f6063-700.jpg" style="width: 800px; height: 300px;"><div class="total">5.  Avengers: Age of Ultron  : 1.39 Billion Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://static.posters.cz/image/hp/48715.jpg" style="width: 800px; height: 300px;"><div class="total">6. Black Panther: 1.33 Billion Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://images8.alphacoders.com/378/thumb-1920-378546.jpg" style="width: 800px; height: 300px;"><div class="total">7.  Iron Man 3  : 1.21 Billion Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://c4.wallpaperflare.com/wallpaper/261/794/336/2016-movie-captain-america-civil-war-hd-wallpaper-thumb.jpg" style="width: 800px; height: 300px;"><div class="total">8.  Captain America: Civil War : 1.15 Billion Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://flxt.tmsimg.com/assets/p14569140_v_h10_ag.jpg" style="width: 800px; height: 300px;"><div class="total">9. Spiderman - Far From Home  : 1.13 Billion Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://allears.net/wp-content/uploads/2020/10/CAPMARVEL-1024x379-1.jpg" style="width: 800px; height: 300px;"><div class="total">10.  Captain Marvel  : 1.12 Billion Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://media1.houstonpress.com/hou/imager/u/slideshow/13329443/hou_art_20220506_dsitmom_header.jpg" style="width: 800px; height: 300px;"><div class="total">11. Doctor Strange: Multiverse of Madness : 952 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/54d45b30-6e89-4f79-b63b-0913aed918a7/dbc477p-2fbcaf67-d01f-43f2-87b6-91fe3d56f926.png/v1/fill/w_1024,h_640,q_80,strp/spider_man_homecoming_wallpaper_3_1280x800_by_jakew1994_dbc477p-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQwIiwicGF0aCI6IlwvZlwvNTRkNDViMzAtNmU4OS00Zjc5LWI2M2ItMDkxM2FlZDkxOGE3XC9kYmM0NzdwLTJmYmNhZjY3LWQwMWYtNDNmMi04N2I2LTkxZmUzZDU2ZjkyNi5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CsXBJoiPM84DMXG-4IVDzNoF0E9dxbWC3mPZGDATfL0" style="width: 800px; height: 300px;"><div class="total">12. Spiderman: Homecoming  : 878 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://dkfhw9rzsr80z.cloudfront.net/DIS-SG-001-A0022/artworks/posters/DIS-SG-001-A0022-P704.jpg" style="width: 800px; height: 300px;"><div class="total">13.  Guardians of the Galaxy Vol.2  :  869 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://thedisinsider.com/wp-content/uploads/2023/03/BPWF.png" style="width: 800px; height: 300px;"><div class="total">14. Black Panther: Wakanda Forever  : 854 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://thethirdfloorinc.com/wp-content/uploads/2017/11/Thor_Ragnarok_Promo_Banner.jpg" style="width: 800px; height: 300px;"><div class="total">15.  Thor: Ragnarok  : 850 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://coveredgeekly.com/wp-content/uploads/FrqskP1WcAEd8pj.jpeg" style="width: 800px; height: 300px;"><div class="total">16. Guardians of the Galaxy Vol.3 : 833 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://www.superherohype.com/wp-content/uploads/sites/4/2014/05/guardianschrisprattvisit1.jpg" style="width: 800px; height: 300px;"><div class="total">17. Guardians of the Galaxy: 770 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://static.wikia.nocookie.net/ce3413e9-9ee1-477b-b809-695403d5e190/scale-to-width/755" style="width: 800px; height: 300px;"><div class="total">18.  Thor: Love and Thunder  : 750 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://wallpapercave.com/wp/wp1820128.jpg" style="width: 800px; height: 300px;"><div class="total">19. Captain America: The Winter Soldier: 714 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://c4.wallpaperflare.com/wallpaper/660/612/942/doctor-strange-2016-marvel-movies-benedict-cumberbatch-poster-doctor-strange-wallpaper-wallpaper-preview.jpg" style="width: 800px; height: 300px;"><div class="total">20.  Doctor Stange  : 676 Billion Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://e0.pxfuel.com/wallpapers/812/212/desktop-wallpaper-marvel-s-thor-the-dark-world-tv-spot-thor-2-movie-poster.jpg" style="width: 800px; height: 300px;"><div class="total">21. Thor: The Dark World  : 644 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2018/07/ant-man-and-the-wasp-movie-review-1.jpg" style="width: 800px; height: 300px;"><div class="total">22. Antman  and the Wasp  : 623 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://wallpapercave.com/wp/AFtCNLt.jpg" style="width: 800px; height: 300px;"><div class="total">23. Iron Man 2: 621 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://wallpaperaccess.com/full/1653412.jpg" style="width: 800px; height: 300px;"><div class="total">24. Iron Man  : 585 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://m.media-amazon.com/images/M/MV5BM2EyN2JhYTMtZWQxOC00MGM4LWI4OTUtOWRhMTk2ODhlZTVjXkEyXkFqcGdeQXVyNTU5MzI1OTM@._V1_.jpg" style="width: 800px; height: 300px;"><div class="total">25. Antman : 518 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://adventurebilities.com.au/wp-content/uploads/hero-event-quantumania.jpg" style="width: 800px; height: 300px;"><div class="total">26. Antman and the Wasp: Quantumania: 463 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://wallpaperaccess.com/full/645142.jpg" style="width: 800px; height: 300px;"><div class="total">27.  Thor  :449 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://w0.peakpx.com/wallpaper/246/809/HD-wallpaper-movie-shang-chi-and-the-legend-of-the-ten-rings-simu-liu-shang-chi.jpg" style="width: 800px; height: 300px;"><div class="total">28.  Shang-Chi: Legend of the Ten Rings : 432 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://deadline.com/wp-content/uploads/2021/05/Eternals_Teaser_1-Sheet_v10_Lg-e1622056944569.jpg?w=1024" style="width: 800px; height: 300px;"><div class="total">29. Eternals : 401 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://i0.wp.com/www.irishfilmcritic.com/wp-content/uploads/2021/04/Black-Widow.jpg?fit=1392%2C696&ssl=1" style="width: 800px; height: 300px;"><div class="total">30.  Black Widow  : 379 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://pbs.twimg.com/media/EJHjmDaU4AAEpMH.jpg" style="width: 800px; height: 300px;"><div class="total">31.  Captain America : The First Avenger: 370 Million Dollars</div></div></div>
+        <div class="object"><div class=" container"><img src="https://w0.peakpx.com/wallpaper/47/462/HD-wallpaper-the-incredible-hulk-hulk-comic-movie-action-thrills-drama.jpg" style="width: 800px; height: 300px;"><div class="total">32.  The Incredible Hulk  : 265 Million Dollars</div></div></div>
+      </div>
+    </body>
+    <footer class="footer">
+        <div class="containerFooter">
+         <div class="rowFooter">
+           <div class="footer-col">
+             <h4>Pages</h4>
+             <ul>
+               <li><a href="marvelnews.html">Home</a></li>
+               <li><a href="upcoming.html">Upcoming Projects</a></li>
+               <li><a href="latest.html">Latest News</a></li>
+               <li><a href="animation.html">Animation</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>Projects</h4>
+             <ul>
+               <li><a href="si.html">Secret Invasion</a></li>
+               <li><a href="lk.html">Loki Season 2</a></li>
+               <li><a href="tm.html">The Marvels</a></li>
+               <li><a href="eo.html">Echo</a></li>
+               <li><a href="dp.html">Deadpool 3</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>About Us</h4>
+             <ul>
+               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">Donate</a></li>
+               <li><a href="privacy.html">Privacy Policy</a></li>
+               <li><a href="#">Terms and Conditions</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>Follow us</h4>
+             <div class="social-links">
+               <a href="contactme@mcuhub.com"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+               <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+               <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+               <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(980%,-225%);">
+             </div>
+           </div>
+         </div>
+        </div>
+     </footer>
+   </html>

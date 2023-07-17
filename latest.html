@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCU Hub</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <header>
+    <h2 class="logo" onclick='window.location.href="marvelnews.html"'>MCU Hub</h2>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+      </ul> </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+  const website = ["file:///C:/Users/yousu/si.html", 
+  "file:///C:/Users/yousu/lk.html",
+  "file:///C:/Users/yousu/tm.html",
+  "file:///C:/Users/yousu/eo.html",
+  "file:///C:/Users/yousu/ir.html",
+  "file:///C:/Users/yousu/dp.html",
+  "file:///C:/Users/yousu/dd.html",
+  "file:///C:/Users/yousu/ca.html",
+  "file:///C:/Users/yousu/ag.html",
+  "file:///C:/Users/yousu/tb.html",
+  "file:///C:/Users/yousu/bl.html",
+  "file:///C:/Users/yousu/ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+  
+    </script>
+<body onload="hide()">
+  <section>
+    <h2>Latest News & Rumors</h2>
+    <div class="row">
+        <div class= "column" id="high"><div class="image"><img src="wolverine.jpg" style="width: 400px; height: 250px;"><div class = "caption2">First look at Ryan Reynolds as Deadpool and Hugh Jackman as Wolverine in their costumes for Deadpool 3<br></div></div></div>         
+        <div class= "column" id="medium"><div class="image"><img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2018/09/X-Men-Movie-Team.jpg" style="width: 400px; height: 250px;"><div class = "caption2">Rumor: The original X-Men universe will be a poart of Deadpool 3.<br></div></div></div>
+        <div class= "column" id="high"><div class="image"><img src="https://i.dailymail.co.uk/1s/2023/07/10/23/73063259-12284765-image-a-232_1689029684852.jpg" style="width: 400px; height: 250px;"><div class = "caption2">New set photos have been released from the set of Deadpool 3<br></div></div></div>
+    </div>
+    <div class="row">
+      <div class= "column" id="medium"><div class="image"><img src="thanos.jpeg" style="width: 400px; height: 250px;;"><div class = "caption2"> Rumor: Josh Brolin will return to Marvel as thanos or Cable<br></div></div></div>
+        <div class= "column" id="high"><div class="image"><img src="starlord.jpg" style="width: 400px; height: 250px;;"><div class = "caption2">James Gunn confirms that he has discussed a potential Starlord movie with Chris Pratt<br></div></div></div>
+        <div class= "column" id="medium"><div class="image"><img src="https://media.vanityfair.com/photos/627c39e0c869e305684282d6/master/w_2560%2Cc_limit/Screen%2520Shot%25202022-05-11%2520at%25203.30.23%2520PM.png" style="width: 400px; height: 250px;;"><div class = "caption2">Rumor: The illuminati from Doctor Strange 2 will return in Deadpool 3<br></div></div></div>
+    </div>
+    <div class="row">
+      <div class= "column" id="high"><div class="image"><img src="https://images.thedirect.com/media/photos/banners.jpg" style="width: 400px; height: 250px;;"><div class = "caption2">Disney CEO Bob Iger claims that the amount of content Marvel released diluted fan focus and attention</div></div></div>
+        <div class= "column" id="medium"><div class="image"><img src="https://upload.wikimedia.org/wikipedia/en/6/68/Captain_America_Brave_New_World_logo.jpg" style="width: 400px; height: 250px;;"><div class = "caption2">Rumor: The Serpent Society in Captain America: Brave New World use biotechnology for their powers</div></div></div>
+        <div class= "column" id="high"><div class="image"><img src="https://super-ficcion.com/wp-content/uploads/2022/05/Doctor-Strange-2_-Anson-Mount-rompe-el-silencio-acerca-de-su-regreso-como-Black-Bolt-780x470.webp" style="width: 400px; height: 250px;;"><div class = "caption2">Anson Mount says he's had unformal talks with Marvel Studios about returning as Black Bolt</div></div></div>
+      </div>
+      <div class="row" id="extra">
+        <div class= "column" id="high"><div class="image"><img src="https://images.thedirect.com/media/photos/banners.jpg" style="width: 400px; height: 250px;;"><div class = "caption2">Disney CEO Bob Iger claims that the amount of content Marvel released diluted fan focus and attention</div></div></div>
+          <div class= "column" id="medium"><div class="image"><img src="https://upload.wikimedia.org/wikipedia/en/6/68/Captain_America_Brave_New_World_logo.jpg" style="width: 400px; height: 250px;;"><div class = "caption2">Rumor: The Serpent Society in Captain America: Brave New World use biotechnology for their powers</div></div></div>
+          <div class= "column" id="high"><div class="image"><img src="https://super-ficcion.com/wp-content/uploads/2022/05/Doctor-Strange-2_-Anson-Mount-rompe-el-silencio-acerca-de-su-regreso-como-Black-Bolt-780x470.webp" style="width: 400px; height: 250px;;"><div class = "caption2">Anson Mount says he's had unformal talks with Marvel Studios about returning as Black Bolt</div></div></div>
+        </div>
+        <button class="more" id="more"  onclick="show()">View More</button>
+        <script>
+          function hide(){
+            document.getElementById('extra').hidden = true;
+          }
+          function show(){
+            document.getElementById('more').hidden = true;
+            document.getElementById("extra").hidden = false;
+          }
+        </script>
+    </section>
+    <h2>Biggest Stories of the Year</h2>
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" ><div class="image-container"><img src="https://variety.com/wp-content/uploads/2023/07/F0r6GbQacAUng-4-1.jpg?w=1000&h=563&crop=1"><div class="headline">First look at Ryan Reynolds as Deadpool and Hugh Jackman as Wolverine in their Deadpool 3 costumes</div><h5  class="high">Reliability: 100</h5></div></div>
+            <div class="swiper-slide"><div class="image-container"><img src="Downloads/352408011_200037422536043_7646855354681904111_n.jpg"><div class="headline">Captain America 4 name changed to Captain America: Brave New World </div><h5  class="high">Reliability: 100</h5></div></div>
+            <div class="swiper-slide"><div class="image-container"><img src="kd.png"><div class="headline">Jeff Loveness may not be the scriptwriter for Avengers: The Kang Dynasty anymore </div><h5  class="medium">Reliability: 100</h5></div></div>
+            <div class="swiper-slide"><div class="image-container"><img src="the-punisher.jpeg"><div class="headline">John Bernthal will return as The Punisher for Daredevil: Born Again</div><h5  class="high">Reliability: 100</h5></div></div>
+            <div class="swiper-slide"><div class="image-container"><img src="https://sportshub.cbsistatic.com/i/2022/01/21/39353431-b343-4e92-af41-aeaa29d54bd6/spider-man-no-way-home-international-japanese-poster.jpg"><div class="headline">Tom Holland confirms that Spider-Man 4 is in very early developement</div><h5  class="high">Reliability: 100</h5></div></div>
+            <div class="swiper-slide"><div class="image-container"><img src="https://hips.hearstapps.com/hmg-prod/images/hawkeye-jeremy-renner-2-1639654064.jpeg"><div class="headline">Hawkweye actor Jeremy Renner suffers multiple injuries in snowplow accident</div><h5  class="high">Reliability: 100</h5></div></div>
+            <div class="swiper-slide"><div class="image-container"><img src="https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2022/09/12115210/Who-makes-up-the-MCU-Thunderbolts-team-Valentina-red-guardian-Yelena-Belova-Bucky-Barnes-US-Agent-and-Taskmaster-high-res.jpeg"><div class="headline">David Harbour aka Red Guardian confirms delay in production for Thunderbolts movie</div><h5  class="high">Reliability: 100</h5></div></div>
+        </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+    autoplay: {
+    delay: 4250, // Set the delay between transitions (in milliseconds)
+    disableOnInteraction: false, // Continue autoplay even when the user interacts with the slider
+  },
+
+});
+    </script>
+</body>
+ <footer class="footer">
+     <div class="containerFooter">
+      <div class="rowFooter">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="marvelnews.html">Home</a></li>
+            <li><a href="upcoming.html">Upcoming Projects</a></li>
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="animation.html">Animation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="si.html">Secret Invasion</a></li>
+            <li><a href="lk.html">Loki Season 2</a></li>
+            <li><a href="tm.html">The Marvels</a></li>
+            <li><a href="eo.html">Echo</a></li>
+            <li><a href="dp.html">Deadpool 3</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="contactme@mcuhub.com"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+            <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+            <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+            <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(980%,-225%);">
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer>
+</html>

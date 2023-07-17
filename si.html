@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Invasion</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <header>
+    <h2  class="logo" onclick='window.location.href="marvelnews.html"'>MCU Hub</h2>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+ 
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+  const website = ["file:///C:/Users/yousu/si.html", 
+  "file:///C:/Users/yousu/lk.html",
+  "file:///C:/Users/yousu/tm.html",
+  "file:///C:/Users/yousu/eo.html",
+  "file:///C:/Users/yousu/ir.html",
+  "file:///C:/Users/yousu/dp.html",
+  "file:///C:/Users/yousu/dd.html",
+  "file:///C:/Users/yousu/ca.html",
+  "file:///C:/Users/yousu/ag.html",
+  "file:///C:/Users/yousu/tb.html",
+  "file:///C:/Users/yousu/bl.html",
+  "file:///C:/Users/yousu/ff.html",
+]
+  
+const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+    </script>
+    <body>
+        <div class="details">
+            <h2>Secret Invasion</h2>
+            <div class="row">
+                <div class="column"><div class="image"><img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/06/secret-invasion-poster.png?w=819" width="300px" height="400px"></div></div>          
+                <div class="column"><iframe class="green" width="800" height="400"  src="https://www.youtube.com/embed/Tp_YZNqNBhw" title="Marvel Studios’ Secret Invasion | Official Trailer | Disney+" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            </div>
+            <button type="button" class="collapsible">Description</button>
+            <div class="content1">
+                <h5>Description: In Marvel Studios new series Secret Invasion, set in the present day MCU, Nick Fury learns of a clandestine invasion of Earth by a faction of shapeshifting Skrulls. Fury joins his allies, including Everett Ross, Maria Hill and the Skrull Talos, who has made a life for himself on Earth. Together they race against time to thwart an imminent Skrull invasion and save humanity.</h5>
+            </div>
+            <button type="button" class="collapsible">Cast</button>
+            <div class="content1">
+                <h5>Cast: Samuel L. Jackson, Ben Mendelsohn, Cobie Smulders, Martin Freeman, Kingsley Ben-Adir, Charlayne Woodard, Killian Scott, Samuel Adewunmi, Dermot Mulroney, Christopher McDonald, Katie Finneran, Emilia Clarke, Olivia Colman, Don Cheadle</h5>
+            </div>
+            <button type="button" class="collapsible">Trailers & Photos</button>
+            <div class="content1">
+                <div class="row">
+                    <div class="column"><div class="image"><iframe class="green" width="350" height="250" src="https://www.youtube.com/embed/qZVTkn2NjS0" title="Marvel Studios’ Secret Invasion | Official Trailer | Disney+" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+                    <div class="column"><div class="image"><iframe class="green" width="350" height="250"  src="https://www.youtube.com/embed/Tp_YZNqNBhw" title="Marvel Studios’ Secret Invasion | Official Trailer | Disney+" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+                    <div class="column"><div class="image"><iframe class="green" width="350" height="250" src="https://www.youtube.com/embed/tUc5PCmSAEU" title="Marvel Studios’ Secret Invasion | Featurette | Disney+" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+                    <div class="column"><div class="image"><iframe class="green" width="350" height="250" src="https://www.youtube.com/embed/VgBKUofIdVo" title="Marvel Studios’ Secret Invasion | Fight | Disney+" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+                    <div class="column"><div class="image"><iframe class="green" width="350" height="250" src="https://www.youtube.com/embed/7wKwhLdBrOE" title="Marvel Studios’ Secret Invasion | Special | Disney+" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+                    <div class="column"><div class="image"><iframe class="green" width="350" height="250" src="https://www.youtube.com/embed/mpOKvuo-xDA" title="Marvel Studios’ Secret Invasion | Who Do You Trust | Disney+" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+                    <div class="column"><div class="image"><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/secret-invasion-nick-fury-skrull-cemetary-cropped.jpg?q=50&fit=crop&w=1500&dpr=1.5" width="350px" height="250px"><h6>&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/secret-invasion-nick-fury-talos-embrace.jpg?q=50&fit=crop&w=1500&dpr=1.5" width="350px" height="250px"><h6>&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/secret-invasion-emilia-clarke-giah-daughter.jpg?q=50&fit=crop&w=1500&dpr=1.5" width="350px" height="250px"><h6>&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/secret-invasion-skrull-vanity-fair-cropped.jpg?q=50&fit=crop&w=1500&dpr=1.5" width="350px" height="250px"><h6>&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/secret-invasion-everett-ross-cropped.jpg?q=50&fit=crop&w=1500&dpr=1.5" width="350px" height="250px"><h6>&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/secret-invasion-olivia-colman-falsworth-cropped.jpg?q=50&fit=crop&w=1500&dpr=1.5" width="350px" height="250px"><h6>&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/secret-invasion-gravik-skrull-rebel-leader.jpg?q=50&fit=crop&w=1500&dpr=1.5" width="350px" height="250px"><h6>&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/secret-invasion-maria-hill-and-nick-fury-cropped.jpg?q=50&fit=crop&w=1500&dpr=1.5" width="350px" height="250px"><h6>&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/secret-invasion-giah-and-talos-cropped.jpg?q=50&fit=crop&w=1500&dpr=1.5" width="350px" height="250px"><h6>&copy; Marvel</h6></div></div>
+                
+                </div>
+        </div>
+        <button type="button" class="collapsible">Related Movies & TV Shows</button>
+            <div class="content1">
+                <div class="row">
+                    <div class="column"><div class="image"><img src="Downloads/cm.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="Downloads/Spider-Man_Far_From_Home_poster.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="Downloads/bp.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="Downloads/ws.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
+                </div>
+            </div>
+            <button type="button" class="collapsible">Rumors</button>
+            <div class="content1">
+                <h5 class="rumor">- Rhodey is the Secretary of State
+                                                <br  />
+                                                - Valentina and Sharon Carter also appear
+                                                <br  />
+                 - Emilia Clarke plays G'iah but also Abigail Brandt.
+                <br  />
+                - It will be revealed that Rhodey and Sharon have been skrulls since after Civil War.
+                <br  />
+               - Armor Wars will be the aftermath of the series, skrulls have been messing with worldwide tech on their benefit and Rhodey has to clean up the mess .
+                <br  />
+                 - Quake appears in episode 3 and the last episode. </h5>
+            </div>
+            <script>
+              var coll = document.getElementsByClassName("collapsible");
+                   var i;
+                   
+                   for (i = 0; i < coll.length; i++) {
+                     coll[i].addEventListener("click", function() {
+                       this.classList.toggle("active");
+                       var content = this.nextElementSibling;
+                       if (content.style.display === "block") {
+                         content.style.display = "none";
+                       } else {
+                         content.style.display = "block";
+                       }
+                     });
+                   }
+           </script>
+        </body>
+ <footer class="footer">
+     <div class="containerFooter">
+      <div class="rowFooter">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="marvelnews.html">Home</a></li>
+            <li><a href="upcoming.html">Upcoming Projects</a></li>
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="animation.html">Animation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="si.html">Secret Invasion</a></li>
+            <li><a href="lk.html">Loki Season 2</a></li>
+            <li><a href="tm.html">The Marvels</a></li>
+            <li><a href="eo.html">Echo</a></li>
+            <li><a href="dp.html">Deadpool 3</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="contactme@mcuhub.com"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-220%,-50%); border-color: transparent;">
+            <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-220%,-50%); border-color: transparent;">
+            <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-220%,-50%); border-color: transparent;">
+            <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-220%,-50%); border-color: transparent;">
+        </div>
+      </div>
+     </div>
+  </footer>
+</html>
+</html>

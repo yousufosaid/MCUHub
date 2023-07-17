@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captain America: Brave New World</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <header>
+    <h2 class="logo" onclick='window.location.href="marvelnews.html"'>MCU Hub</h2>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+      </ul> </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+   const website = ["file:///C:/Users/yousu/si.html", 
+  "file:///C:/Users/yousu/lk.html",
+  "file:///C:/Users/yousu/tm.html",
+  "file:///C:/Users/yousu/eo.html",
+  "file:///C:/Users/yousu/ir.html",
+  "file:///C:/Users/yousu/dp.html",
+  "file:///C:/Users/yousu/dd.html",
+  "file:///C:/Users/yousu/ca.html",
+  "file:///C:/Users/yousu/ag.html",
+  "file:///C:/Users/yousu/tb.html",
+  "file:///C:/Users/yousu/bl.html",
+  "file:///C:/Users/yousu/ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+  
+    </script>
+    <body>
+        <div class="details8">
+            <h2>Captain America: Brave New World</h2>
+            <div class="row">
+                <div class="column"><div class="image"><img src="https://cdn.marvel.com/content/1x/captainamericabravenewworld_lob_crd_01.jpg" width="300px" height="400px"></div></div>          
+                <div class="column"><img src="trailer3.png"></div>
+            </div>
+            <button type="button" class="collapsible8">Description</button>
+            <div class="content8">
+                <h5 >Description: "Captain America: Brave New World" follows the story of Sam Wilson, who takes on the mantle of Captain America after the retirement of Steve Rogers. As the new Captain America, Sam finds himself facing numerous challenges and must adapt to his new role while upholding the values and legacy of his predecessor.</h5>
+            </div>
+            <button type="button" class="collapsible8">Cast</button>
+            <div class="content8">
+                <h5 style="float: left;">Cast: Anthony Mackie, 
+                    Danny Ramirez, 
+                    Tim Blake Nelson, 
+                    Liv Tyler, 
+                    Carl Lumbly, 
+                    Shira Haas, 
+                    Harrison Ford, 
+                    Xosha Roquemore, 
+                    Colby Lopez
+                    </h5>
+            </div>
+            <button type="button" class="collapsible8">Trailers & Photos</button>
+            <div class="content8">
+                <div class="row">
+                </div>
+        </div>
+        <button type="button" class="collapsible8">Related Movies & TV Shows</button>
+            <div class="content8">
+                <div class="row">
+                    <div class="column"><div class="image"><img src="https://m.media-amazon.com/images/M/MV5BODNiODVmYjItM2MyMC00ZWQyLTgyMGYtNzJjMmVmZTY2OTJjXkEyXkFqcGdeQXVyNzk3NDUzNTc@._V1_.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="https://cdn.marvel.com/content/1x/shehulk_lob_crd_04.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="https://cdn.marvel.com/content/1x/online_10.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
+                </div>
+            </div>
+            <button type="button" class="collapsible8">Rumors</button>
+            <div class="content8">
+                <h5 class="rumor">- Bucky Barnes may appear in the movie
+                                                <br  />
+                                                - Nick Fury and Rhodey may appear in the movie
+                                                <br  />
+                                                -Sharon Carter may appear in the movie
+                                                <br  />
+                                                -A follow-up to CAPTAIN AMERICA: BRAVE NEW WORLD is already in development, possibly the rumored World War Hulk project
+                                                <br  />
+                                                -In the film, Tiamut the Celestials body has become an island after the events of Eternals. After adamantium is discovered on the island, every country in the world is trying to claim it for themselves, including Thunderbolt Ross, who is now the President of the United States. He will serve as one of the films villains and force Sam Wilson to assemble a new group of heroes to stop him.
+                                                <br  />
+                                                -Red Hulk is in the movie
+                                              </h5>
+            </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible8");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+    </body>
+ <footer class="footer">
+     <div class="containerFooter">
+      <div class="rowFooter">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="marvelnews.html">Home</a></li>
+            <li><a href="upcoming.html">Upcoming Projects</a></li>
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="animation.html">Animation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="si.html">Secret Invasion</a></li>
+            <li><a href="lk.html">Loki Season 2</a></li>
+            <li><a href="tm.html">The Marvels</a></li>
+            <li><a href="eo.html">Echo</a></li>
+            <li><a href="dp.html">Deadpool 3</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="contactme@mcuhub.com"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-220%,-50%); border-color: transparent;">
+            <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-220%,-50%); border-color: transparent;">
+            <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-220%,-50%); border-color: transparent;">
+            <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-220%,-50%); border-color: transparent;">
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer>
+</html>
+</html>
