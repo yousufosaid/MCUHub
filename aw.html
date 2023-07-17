@@ -28,7 +28,7 @@
   <main>
     <script>
       const marvelProjects = [
-     "Secret Invasion ",
+     "Secret Invasion ", 
     "Loki: Season 2 ",
     "The Marvels ",
     "Echo ",
@@ -39,9 +39,22 @@
     "Agatha: Coven of Chaos ",
     "Thunderbolts ",
     "Blade ",
-    "Fantastic Four",
-    "Armor Wars"
+    "Fantastic Four"
   ];
+
+   const website = ["file:///C:/Users/yousu/si.html", 
+  "file:///C:/Users/yousu/lk.html",
+  "file:///C:/Users/yousu/tm.html",
+  "file:///C:/Users/yousu/eo.html",
+  "file:///C:/Users/yousu/ir.html",
+  "file:///C:/Users/yousu/dp.html",
+  "file:///C:/Users/yousu/dd.html",
+  "file:///C:/Users/yousu/ca.html",
+  "file:///C:/Users/yousu/ag.html",
+  "file:///C:/Users/yousu/tb.html",
+  "file:///C:/Users/yousu/bl.html",
+  "file:///C:/Users/yousu/ff.html",
+]
   
   const searchInput = document.getElementById("search-input");
   const suggestionsList = document.getElementById("suggestions-list");
@@ -57,9 +70,11 @@
       const listItem = document.createElement("li");
       listItem.textContent = project;
       listItem.addEventListener("click", function() {
-        searchInput.value = project;
-        suggestionsList.innerHTML = "";
-        suggestionsList.style.display = "none";
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
       });
       suggestionsList.appendChild(listItem);
     });
@@ -70,58 +85,13 @@
       suggestionsList.style.display = "none";
     }
   });
-  
-searchButton.addEventListener("click", function(){
-  if(searchInput.value == marvelProjects[0]){
-    window.location.href="file:///C:/Users/yousu/si.html";
-  }
-
-  else if(searchInput.value == marvelProjects[1]){
-    window.location.href="file:///C:/Users/yousu/lk.html";
-  }
-
-  else if(searchInput.value == marvelProjects[2]){
-    window.location.href="file:///C:/Users/yousu/tm.html";
-  }
-  else if(searchInput.value == marvelProjects[3]){
-    window.location.href="file:///C:/Users/yousu/eo.html";
-  }
-  else if(searchInput.value == marvelProjects[4]){
-    window.location.href="file:///C:/Users/yousu/ir.html";
-  }
-  else if(searchInput.value == marvelProjects[5]){
-    window.location.href="file:///C:/Users/yousu/dp.html";
-  }
-  else if(searchInput.value == marvelProjects[6]){
-    window.location.href="file:///C:/Users/yousu/dd.html";
-  }
-  else if(searchInput.value == marvelProjects[7]){
-    window.location.href="file:///C:/Users/yousu/ca.html";
-  }
-  else if(searchInput.value == marvelProjects[8]){
-    window.location.href="file:///C:/Users/yousu/ag.html";
-  }
-
-  else if(searchInput.value == marvelProjects[9]){
-    window.location.href="file:///C:/Users/yousu/tb.html";
-  }
-  else if(searchInput.value == marvelProjects[10]){
-    window.location.href="file:///C:/Users/yousu/bl.html";
-  }
-  else if(searchInput.value == marvelProjects[11]){
-    window.location.href="file:///C:/Users/yousu/ff.html";
-  }
-  else if(searchInput.value == marvelProjects[12]){
-    window.location.href="file:///C:/Users/yousu/aw.html";
-  }
-})
-
   document.addEventListener("click", function(e) {
     if (!searchInput.contains(e.target)) {
       suggestionsList.innerHTML = "";
       suggestionsList.style.display = "none";
     }
   });
+  
   
     </script>
     <body>
@@ -149,7 +119,7 @@ searchButton.addEventListener("click", function(){
             <div class="content13">
                 <div class="row">
                     <div class="column"><div class="image"><img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/06/secret-invasion-poster.png?w=819" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
-                    <div class="column"><div class="image"><img src="Downloads/bp.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
+                    <div class="column"><div class="image"><img src="bp.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
                     <div class="column"><div class="image"><img src="https://cdn.marvel.com/content/1x/captainamericabravenewworld_lob_crd_01.jpg" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
                 </div>
             </div>
