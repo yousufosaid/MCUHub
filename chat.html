@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chats</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <header>
+    <h2  class="logo" onclick='window.location.href="marvelnews.html"'>MCU Hub</h2>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+        <li><a class="chat" href="chat.html">Chat</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+  const website = ["si.html", 
+  "lk.html",
+  "tm.html",
+  "eo.html",
+  "ir.html",
+  "dp.html",
+  "dd.html",
+  "ca.html",
+  "ag.html",
+  "tb.html",
+  "bl.html",
+  "ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+    </script>
