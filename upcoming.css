@@ -1,0 +1,265 @@
+p {
+  text-align: center;
+  font-size: 100px;
+  margin-top: 0px;
+  font-family: avenger;
+  color: #265a24;
+  transform: translate(0%,65%);
+  word-spacing: 10px;
+}
+
+.timer{
+  box-sizing: border-box;
+  border-width: 15px;
+  border-style: solid;
+  border-color: #265a24;
+  width: 1000px;
+  height: 400px;
+  align-items: center;
+  border-radius: 30px;
+  margin-left: 125px;
+  background-image: url("loki-poster-2-1620828778337_160w.jpg");
+}
+
+
+.year{
+  background-image: url(Downloads/b.png);
+  width:1000px;
+    height: 1920px;
+    align-items: center;
+    border-radius: 10px;
+    border-width: 10px;
+    border-color: #541322;
+    border-style:solid;
+    position: relative;
+    margin-left: 125px;
+    margin-bottom: 10px;
+  }
+  .year h3{
+    font-size: 65px;
+    text-align: center;
+    background-color: #ffffff;
+    color:#541322;
+    border-radius: 30px;
+    width: 200px;
+    font-weight: bolder;
+    font-family: avenger;
+    transform: translate(200%, 230%);
+  }
+
+  .si{
+    height: 150px;
+    width: 270px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(4, 71, 4);
+    border-width: 5px;
+    transform: translate(85%, 40%);
+  }
+
+.info2{
+    width: 262px;
+    font-family: avenger;
+    font-size: 30px;
+    color: #ffffff;
+    float: left;
+    opacity: 0;
+    margin-right: 148px;
+    margin-top: 102px;
+    background-color: rgb(4, 71, 4);
+  }
+
+  .si .info2:hover{
+    opacity: 1;
+  }
+
+  .lk{
+    height: 150px;
+    width: 270px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(10, 68, 10);
+    border-width: 5px;
+    transform: translate(85%, 145%);
+  }
+
+  .lk .info2:hover{
+    color: goldenrod;
+    opacity: 1;
+  }
+
+  .mv{
+    height: 150px;
+    width: 270px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(68, 19, 10);
+    border-width: 5px;
+    transform: translate(-119%, 260%);
+  }
+
+  .mv .info2:hover{
+    background-color: rgb(68, 19, 10);
+    color: goldenrod;
+    opacity: 1;
+  }
+
+  .eo{
+    height: 150px;
+    width: 270px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(7, 10, 7);
+    border-width: 5px;
+    transform: translate(185%, 275%);
+  }
+
+  .eo .info2:hover{
+    background-color: black;
+    color: goldenrod;
+    opacity: 1;
+  }
+
+  .ir{
+    height: 150px;
+    width: 280px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(68, 19, 10);
+    border-width: 5px;
+    transform: translate(-19%, 350%);
+  }
+
+  .ir .info2:hover{
+    width: 272px;
+    background-color: rgb(68, 19, 10);
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .ca{
+    height: 150px;
+    width: 270px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(160, 10, 10);
+    border-width: 5px;
+    transform: translate(83%, 530%);
+  }
+
+  .ca .info2:hover{
+    background-color: rgb(160, 10, 10);
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .dd{
+    height: 150px;
+    width: 270px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(90, 14, 34);
+    border-width: 5px;
+    transform: translate(85%, 450%);
+  }
+
+  .dd .info2:hover{
+    background-color: rgb(90, 14, 34);
+    color: silver;
+    opacity: 1;
+  }
+
+  .tb{
+    height: 150px;
+    width: 270px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(152, 58, 0);
+    border-width: 5px;
+    transform: translate(186%, 630%);
+  }
+
+  .tb .info2:hover{
+    background-color: rgb(152, 58, 0);
+    color: white;
+    opacity: 1;
+  }
+
+  .ag{
+    height: 150px;
+    width: 270px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(77, 14, 90);
+    border-width: 5px;
+    transform: translate(-118%, 645%);
+  }
+
+  .ag .info2:hover{
+    background-color: rgb(77, 14, 90);
+    color: silver;
+    opacity: 1;
+  }
+
+  .bl{
+    height: 150px;
+    width: 270px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(105, 0, 25);
+    border-width: 5px;
+    transform: translate(-18%, 740%);
+  }
+
+  .bl .info2:hover{
+    background-color: rgb(105, 0, 25);
+    color: black;
+    opacity: 1;
+  }
+
+  .dp{
+    height: 150px;
+    width: 270px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(102, 2, 2);
+    border-width: 5px;
+    transform: translate(-20%, 470%);
+  }
+
+  .dp .info2:hover{
+    background-color: rgb(102,2,2);
+    color: whitesmoke;
+    opacity: 1;
+  }
+
+  .ff{
+    height: 150px;
+    width: 270px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(74, 101, 255);
+    border-width: 5px;
+    transform: translate(-18%, 845%);
+  }
+
+  .ff .info2:hover{
+    opacity: 1;
+    background-color: rgb(74, 101, 255);
+    color: white;
+  }
+
+
+
