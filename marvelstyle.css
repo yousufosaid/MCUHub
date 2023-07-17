@@ -145,7 +145,7 @@ h2{
   }
   
   nav a {
-    margin-left: 35px;
+    margin-left: 15px;
     display: block;
     color: #541322;
     padding: 15px 20px;
@@ -180,6 +180,12 @@ h2{
     nav a.animation:hover {
       color: #ffffff;
       background-image:url("221213152642-01-spiderman-across-the-spider-verse-2023.jpg");
+      border-radius: 30px;
+    }
+
+    nav a.chat:hover {
+      color: #ffffff;
+      background-image:url("https://blog.1a23.com/wp-content/uploads/sites/2/2020/02/Desktop.png");
       border-radius: 30px;
     }
   
