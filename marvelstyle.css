@@ -19,6 +19,20 @@ html {
   background-size: cover;
   }
 
+::-webkit-scrollbar-thumb{
+  width: auto;
+  background-color: #541322;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-button{
+  background-color: #541322;
+}
+
+::-webkit-scrollbar-track-piece{
+  background-color: white;
+}
+
 .search-container {
   position: relative;
   display: inline-block;
