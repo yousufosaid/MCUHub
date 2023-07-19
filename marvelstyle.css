@@ -1245,6 +1245,10 @@ h2{
       width: 80%;
       height: 200px;
       background-image: url("secret-invasion-poster.jpg");
+      border-radius: 30px;
+      margin-top: 20px;
+      color: #1fbc5c;
+      font-size: larger;
     }
 
     
