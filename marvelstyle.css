@@ -11,6 +11,14 @@
     font-family: avenger;
     src: url(AvengeanceHeroicAvengerBold-MM2J.ttf);
 }
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
 .search-container {
   position: relative;
   display: inline-block;
