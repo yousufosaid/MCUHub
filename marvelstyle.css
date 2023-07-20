@@ -1274,8 +1274,9 @@ h2{
     .front-img{
       float: left;
       padding: 0%;
-      width: 400px;
+      width: 500px;
       height: 300px;
+      margin-left: 10px;
     }
 
     
