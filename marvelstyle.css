@@ -1261,7 +1261,14 @@ h2{
     }
 
     .news-section{
-      
+      width: 90%;
+      background-color: white;
+      color: #541322;
+    }
+
+    .front-img{
+      float: left;
+      padding: 0%;
     }
 
     
