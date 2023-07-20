@@ -18,21 +18,6 @@ html {
   -o-background-size: cover;
   background-size: cover;
   }
-
-::-webkit-scrollbar-thumb{
-  width: auto;
-  background-color: #541322;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-button{
-  background-color: #541322;
-}
-
-::-webkit-scrollbar-track-piece{
-  background-color: white;
-}
-
 .search-container {
   position: relative;
   display: inline-block;
@@ -98,6 +83,8 @@ background-color: transparent;
   .logo{
     margin-bottom: 20px;
     margin-left: 20px;
+    background-image: url('https://c0.wallpaperflare.com/preview/59/594/555/germany-elmshorn-art-childhood.jpg');
+    border-radius: 30px;
   }
   /* Header */
   
