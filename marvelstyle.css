@@ -1262,11 +1262,13 @@ h2{
 
     .news-section{
       width: 90%;
+      height: 900px;
       background-color: white;
       color: #541322;
       margin-left: 5%;
       border-radius: 30px;
       padding: 10px;
+      margin-top: 10px;
     }
 
     .front-img{
