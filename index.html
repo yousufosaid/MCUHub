@@ -157,15 +157,41 @@
           <div class="column" onclick="window.location.href='latest.html'"><div class="image"><img src="more2.png" style="width: 400px; height: 250px;"></div></div>
     </section>
   </main>
-  <div class="AW-Form-733880385"></div>
-<script type="text/javascript">(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//forms.aweber.com/form/85/733880385.js";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, "script", "aweber-wjs-t6cuu9qzi"));
-</script>
+  <script>
+    (function(){
+    var distance  = 950;               // Scroll distance in pixel.
+    var expireKey = 'newsletter';      // Name of the localStorage timestamp.
+    var popupId   = '#get-newsletter'; // ID of the popup to display.
+    
+    function maybeShowPopup() {
+      // Check if the user scrolled far enough.
+      if ( jQuery(window).scrollTop() < distance ) {
+        return;
+      }
+    
+      // Remove the custom scroll event, to avoid displaying the popup multiple times.
+      jQuery( window ).off( '.popup_' + expireKey );
+    
+      // Check, if the popup was displayed already today.
+      if ( window.localStorage ) {
+        var nextPopup = localStorage.getItem( expireKey );
+    
+        if (nextPopup > new Date()) {
+          return;
+        }
+    
+        var expires = new Date();
+        expires = expires.setHours(expires.getHours() + 24);
+        localStorage.setItem( expireKey, expires );
+      }
+        
+      DiviPopup.openPopup( popupId );
+    }
+    
+    // Attach the scroll listener to the window.
+    jQuery(window).on( 'scroll.popup_' + expireKey, maybeShowPopup );
+    })()
+    </script>
 </body>
  <footer class="footer">
      <div class="containerFooter">
