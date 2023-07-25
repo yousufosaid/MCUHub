@@ -143,6 +143,7 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV9K34L"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <link rel="icon" href="favicon.png" type="image/png">
   <header>
     <div class="nav-container2">
       <nav class="topnav" id="myTopnav">
