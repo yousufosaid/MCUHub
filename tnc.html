@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCU Hub</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <header>
+    <img  class="logo" onclick='window.location.href="marvelnews.html"' src="logo (1).png"></img>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+        
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+  const website = ["si.html", 
+  "lk.html",
+  "tm.html",
+  "eo.html",
+  "ir.html",
+  "dp.html",
+  "dd.html",
+  "ca.html",
+  "ag.html",
+  "tb.html",
+  "bl.html",
+  "ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+    </script>
+  </main>
+  <div class="privacyT">
+    <h2 style="transform: translate(0%,50%);">Terms and Conditions</h2>
+    <h6 style="color: #541322; transform: translate(0%,10%); font-family: privacy; margin-left: 25px; margin-right: 25px;">
+        Terms and Conditions
+
+Welcome to MCUHub! These terms and conditions outline the rules and regulations for the use of mcuhub.live (referred to as the website or we/us/our).
+
+By accessing and using this website, you accept these terms and conditions in full. If you disagree with any part of these terms and conditions, please refrain from using our website.
+
+1. Intellectual Property
+
+All content on this website, including but not limited to text, graphics, logos, images, videos, audio, software, and other materials, are protected by intellectual property rights and are the property of MCUHub or its licensors. You may not reproduce, distribute, modify, display, or exploit any of the content without prior written consent from us.
+
+2. User Conduct
+
+You agree not to use this website for any unlawful purpose or in violation of any applicable laws.
+You must not engage in any activity that could harm, disable, overburden, or impair the proper functioning of the website or its services.
+You are responsible for maintaining the confidentiality of your account information and password. You must notify us immediately of any unauthorized access to your account.
+When using interactive features on the website, you agree not to post, transmit, or share any content that is defamatory, obscene, abusive, offensive, or otherwise violates any third-party rights.
+3. Third-Party Links
+
+Our website may contain links to third-party websites or services. We do not have control over the content, privacy policies, or practices of these third-party sites. We are not responsible for any loss or damages resulting from your use of these external links.
+
+4. Disclaimer
+
+The information on this website is provided as is and for general information purposes only. We make no warranties, expressed or implied, regarding the accuracy, reliability, or completeness of the information.
+We do not guarantee that the website will be error-free, secure, or available at all times. You acknowledge that the use of the website may be interrupted or contain errors.
+5. Limitation of Liability
+
+To the maximum extent permitted by law, we shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in any way connected with your use of the website or its content.
+
+6. Indemnification
+
+You agree to indemnify and hold harmless [Your Company Name] and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses, including reasonable attorney fees, arising out of your use of the website or any violation of these terms and conditions.
+
+7. Modifications
+
+We reserve the right to modify, suspend, or terminate the website or any part thereof, and these terms and conditions at any time without prior notice. It is your responsibility to review these terms periodically for any changes.
+
+8. Contact Information
+
+If you have any questions or concerns about these terms and conditions, please contact us at contactus@mcuhub.com.
+    </h6>
+  </div>
