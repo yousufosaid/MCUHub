@@ -30,7 +30,7 @@
          
   </header>
 </head>
-<body>
+<body onload="hide()">
   <main>
     <script>
       const marvelProjects = [
@@ -117,7 +117,7 @@
         <textarea class="message"></textarea>
       </span>
       <button id="submit" onclick="show()" style="width: 160px; height: 50px; border-radius: 15px; color: white; background-color: #541322;">Submit</button>
-      <h5 style="color: rgb(18, 164, 115);" onload="hide()" id="m">Message was sent!</h5>
+      <h5 style="color: rgb(18, 164, 115); margin-top: 20px;" id="m">Message was sent!</h5>
     </form>
   </div>
   <script>
