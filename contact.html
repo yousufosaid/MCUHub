@@ -117,12 +117,16 @@
         <textarea class="message"></textarea>
       </span>
       <button id="submit" onclick="show()" style="width: 160px; height: 50px; border-radius: 15px; color: white; background-color: #541322;">Submit</button>
-      <h5 style="color: rgb(18, 164, 115); margin-top: 40px; display: none;" id="m">Message was sent!</h5>
+      <div class="send"></div>
     </form>
   </div>
   <script>
     function show(){
-        document.getElementById("m").style.display = 'block';
+        const container = document.getElementById('send');
+        const newText = document.createTextNode('Message was sent!');
+        const paragraphElement = document.createElement('h6');
+        paragraphElement.appendChild(newText);
+        container.appendChild(paragraphElement);
       }
   </script>
   <style>
