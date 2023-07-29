@@ -106,27 +106,28 @@
     <form class="contact-form">
       <span>
         <h5>Name:</h5>
-        <input type="text" class="name">
+        <input type="text" id="name">
       </span>
       <span>
         <h5>E-mail:</h5>
-        <input type="email" class="email">
+        <input type="email" id="email">
       </span>
       <span>
         <h5>Message:</h5>
-        <textarea class="message"></textarea>
+        <textarea id="message"></textarea>
       </span>
       <button id="submit" onclick="show()" style="width: 160px; height: 50px; border-radius: 15px; color: white; background-color: #541322;">Submit</button>
     </form>
     <div class="send"></div>
   </div>
   <script>
+
     function show(){
-        const container = document.getElementById('send');
-        const newText = document.createTextNode('Message was sent!');
-        const paragraphElement = document.createElement('h6');
-        paragraphElement.appendChild(newText);
-        container.appendChild(paragraphElement);
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const message = document.getElementById("message");
+
+      
       }
   </script>
   <style>
