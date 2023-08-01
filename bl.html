@@ -131,7 +131,16 @@
             </div>
             <button type="button" class="collapsible11">Rumors</button>
             <div class="content11">
-                <h5 class="rumor">- Rumor has it that several rewrites on #Blade has greatly reduced the screentime of Black Knight
+                <script>
+                function unblur(){
+                  const rumor = document.getElementById("rmr")
+                  const sButton = document.getElementById("spoil")
+                  rumor.classList.remove("rumor");
+                  sButton.remove();
+                }
+              </script>
+                <button id="spoil" style="color: rgb(6, 78, 6); background-color: #9fae26; border-radius: 15px; height: 50px; width: 150px; z-index: 1; margin-left: 550px; margin-top: 50px; position: absolute;" onclick="unblur()">See Spoilers</button>
+                <h5 id="rmr" class="rumor" style="float: left;">- Rumor has it that several rewrites on #Blade has greatly reduced the screentime of Black Knight
                                                 <br  />
                                                 - Blade will be rated R
                                                 <br  />

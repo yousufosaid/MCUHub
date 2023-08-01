@@ -128,7 +128,16 @@
             </div>
             <button type="button" class="collapsible4">Rumors</button>
             <div class="content4">
-                <h5 class="rumor">- The series will show us the history between Kingpin and Maya Lopez
+                <script>
+                function unblur(){
+                  const rumor = document.getElementById("rmr")
+                  const sButton = document.getElementById("spoil")
+                  rumor.classList.remove("rumor");
+                  sButton.remove();
+                }
+              </script>
+                <button id="spoil" style="color: rgb(6, 78, 6); background-color: #9fae26; border-radius: 15px; height: 50px; width: 150px; z-index: 1; margin-left: 550px; margin-top: 50px; position: absolute;" onclick="unblur()">See Spoilers</button>
+                <h5 id="rmr" class="rumor" style="float: left;">- The series will show us the history between Kingpin and Maya Lopez
                                                 <br  />
                                                 - Daredevil will be in two episodes.
                                                 <br  />

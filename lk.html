@@ -134,6 +134,14 @@
             </div>
             <button type="button" class="collapsible2">Rumors</button>
             <div class="content2">
+              <script>
+                function unblur(){
+                  const rumor = document.getElementById("rmr")
+                  const sButton = document.getElementById("spoil")
+                  rumor.classList.remove("rumor");
+                  sButton.remove();
+                }
+              </script>
                 <button id="spoil" style="color: rgb(6, 78, 6); background-color: #9fae26; border-radius: 15px; height: 50px; width: 150px; z-index: 1; margin-left: 550px; margin-top: 50px; position: absolute;" onclick="unblur()">See Spoilers</button>
                 <h5 id="rmr" class="rumor" style="float: left;">-Besides Sylvie, there will NOT be ANY Loki Variants in Loki Season 2
                     <br  />
@@ -143,14 +151,6 @@
                 <br  />
                 -Squadron supreme are main villain of Loki Season 2, They are group of superpowered people from alternate universe and enemy of Kang the conqueror. Loki and TVA are tasked with track them down across multiverse and bring before Kang. Hyperion is SS leader.</h5>
             </div>
-            <script>
-              function unblur(){
-                const rumor = document.getElementById("rmr")
-                const sButton = document.getElementById("spoil")
-                rumor.classList.remove("rumor");
-                sButton.remove();
-              }
-            </script>
             <button type="button" class="collapsible2">Comments</button>
             <div class="content2">
               <div id="disqus_thread"></div>
