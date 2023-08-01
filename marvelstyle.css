@@ -1125,18 +1125,6 @@ h2{
       overflow: hidden;
       background-color: rgb(116, 213, 220);
     }
-    
-    .rumor{
-      float: left;
-      filter: blur(4px);
-      -webkit-filter: blur(4px);
-    }
-
-    .rumor:hover{
-      filter: blur(0px);
-      -webkit-filter: blur(0px);
-      transition: 2200ms;
-    }
 
     .containerFooter{
       max-width: 1170px;
