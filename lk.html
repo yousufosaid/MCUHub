@@ -135,7 +135,7 @@
             <button type="button" class="collapsible2">Rumors</button>
             <div class="content2">
                 <button style="height: 50px; width: 50px;" onclick="unblur()">See Spoilers</button>
-                <h5 id="rmr" style="float: left; filter: blur(4px); -webkit-filter: blur(4px);">-Besides Sylvie, there will NOT be ANY Loki Variants in Loki Season 2
+                <h5 id="rmr" class="rumor" style="float: left;">-Besides Sylvie, there will NOT be ANY Loki Variants in Loki Season 2
                     <br  />
                 -Marvel Studios had to reshoot Loki season 2 as a result of Jonathan Majors' legal problems
                 <br  />
@@ -146,8 +146,8 @@
             <script>
               function unblur(){
                 const rumor = document.getElementById("rmr")
-                rumor.style.filter = "blur:0px";
-                rumor.style.webkitFilter = "blur:0px";
+                rumor.classList.remove("rumor");
+                
               }
 
 

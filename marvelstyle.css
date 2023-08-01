@@ -1126,6 +1126,12 @@ h2{
       background-color: rgb(116, 213, 220);
     }
 
+    .rumor{
+      filter: blur(4px);
+      -webkit-filter: blur(4px);
+    }
+
+
     .containerFooter{
       max-width: 1170px;
       margin:auto;
