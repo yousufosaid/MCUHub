@@ -132,10 +132,10 @@
                     <div class="column"><div class="image"><img src="https://sportshub.cbsistatic.com/i/2022/10/24/3fe2ecc3-2100-4f7e-951a-aabe1782372d/ant-man-and-the-wasp-quantumania-poster.jpg?auto=webp&width=1688&height=2500&crop=0.675:1,smart" width="170px" height="275px"><h6 style="margin-right: 20px;">&copy; Marvel</h6></div></div>
                 </div>
             </div>
-            <button type="button" class="collapsible2" onload="blur()">Rumors</button>
+            <button type="button" class="collapsible2">Rumors</button>
             <div class="content2">
                 <button style="height: 50px; width: 50px;" onclick="unblur()">See Spoilers</button>
-                <h5 id="rmr" style="float: left;">-Besides Sylvie, there will NOT be ANY Loki Variants in Loki Season 2
+                <h5 id="rmr" style="float: left; filter: blur(4px); -webkit-filter: blur(4px);">-Besides Sylvie, there will NOT be ANY Loki Variants in Loki Season 2
                     <br  />
                 -Marvel Studios had to reshoot Loki season 2 as a result of Jonathan Majors' legal problems
                 <br  />
@@ -144,16 +144,10 @@
                 -Squadron supreme are main villain of Loki Season 2, They are group of superpowered people from alternate universe and enemy of Kang the conqueror. Loki and TVA are tasked with track them down across multiverse and bring before Kang. Hyperion is SS leader.</h5>
             </div>
             <script>
-              function blur(){
-                const rumor = document.getElementById("rmr")
-                rumor.style.filter = "blur:4px";
-                rumor.style.webkitFilter = "blur:4px";
-              }
               function unblur(){
                 const rumor = document.getElementById("rmr")
                 rumor.style.filter = "blur:0px";
                 rumor.style.webkitFilter = "blur:0px";
-                console.log("hello")
               }
 
 
