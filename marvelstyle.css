@@ -1285,5 +1285,8 @@ h2{
     .article p{
       font-family: article;
     }
+    .article h5{
+      float: left;
+    }
 
     
