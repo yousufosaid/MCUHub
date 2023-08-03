@@ -11,6 +11,11 @@
     font-family: avenger;
     src: url(AvengeanceHeroicAvengerBold-MM2J.ttf);
 }
+
+@font-face {
+  font-family: article;
+  src: url(Metropolis-Regular.ttf);
+}
 html { 
   background: url(images/bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -1275,6 +1280,10 @@ h2{
       border-radius: 15px;
       border-width: 5px;
       border-color: #541322;
+    }
+
+    .article p{
+      font-family: article;
     }
 
     
