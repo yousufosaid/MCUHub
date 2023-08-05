@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stay up-to-date with the latest news and upcoming projects in the Marvel Cinematic Universe (MCU) at MCU Hub. Explore upcoming movies, TV shows, and animation. Get the latest updates on Secret Invasion, Loki: Season 2, The Marvels, Deadpool 3, and more. Follow us for exciting MCU content.">
+  <meta name="title" content="MCU Hub">
+  <title>The Fantastic four will be sent out of time like Captain America</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4776915864879968"
+     crossorigin="anonymous"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <header>
+    <img  class="logo" onclick='window.location.href="marvelnews.html"' src="logo (1).png"></img>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+        
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+  const website = ["si.html", 
+  "lk.html",
+  "tm.html",
+  "eo.html",
+  "ir.html",
+  "dp.html",
+  "dd.html",
+  "ca.html",
+  "ag.html",
+  "tb.html",
+  "bl.html",
+  "ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+    </script>
+  </main>
+  <div class="news-section" style="height: max-content;">
+    <h2>he new Loki season may take us back to some familiar setting</h2> 
+    <h6 style="z-index: 2;transform: translate(520px,340px); width: fit-content;">Photo: Marvel Studios</h6><img class="front-img" src="lokiimg.jpg">
+    <div class="article" style="margin-left: 100px; margin-right: 100px; margin-top: 30px;"><p>Get ready, Marvel fans, because the God of Mischief is returning to our screens with a much-anticipated second season of "Loki." After a cliffhanger ending in the first season, fans have been eagerly waiting to see what happens next in the journey of our favorite trickster. The good news is, the wait is almost over! Loki Season Two is set to premiere on October 6th, and we've been treated to an exciting trailer that promises an adventure like no other.</p>
+
+    <p>The first season of "Loki" left viewers on the edge of their seats with its mind-bending plot twists and revelations. As the season concluded, we saw our Loki variant (played brilliantly by Tom Hiddleston) waking up in a mysterious alternate timeline controlled by the enigmatic He Who Remains. This momentous revelation left fans with burning questions about the future of the MCU and how Loki would deal with the newfound challenges.</p>
+        
+<p>The newly released trailer for Season Two has given us some intriguing glimpses into what lies ahead. We get a sense that Loki is facing more complexities and dangers than ever before. His journey through time and alternate realities seems far from over, and he must confront both familiar and new adversaries to survive and protect the timeline.</p>
+        
+<p>One exciting revelation from the trailer, according to insider Alex Perez, one of the locations Loki will visit is Cleveland one year before the battle of Earth. Scooper Alex Perez's hints about this trip suggest that the show's creators are not shying away from exploring lesser-known parts of the Marvel universe. Visiting Cleveland one year before the Battle of Earth could potentially unravel new plotlines and add depth to the overall narrative.</p>
+        
+<p>Moreover, the trailer offers glimpses of familiar locations from the first season, including the TVA interrogation rooms and the enigmatic Citadel at the End of Time. This suggests that the second season will delve deeper into the mysteries of the Time Variance Authority and the beings that control the multiverse's flow.</p>
+        
+<p>With the return of fan-favorite characters and the introduction of new ones, "Loki" Season Two is shaping up to be an epic continuation of the saga. Tom Hiddleston's charm and wit as Loki are as captivating as ever, and the show's creators seem intent on exploring the multiverse's vast potential.</p>
+        
+<p>Fans are undoubtedly counting down the days until October 6th, eager to immerse themselves in the mischief, mayhem, and time-traveling adventures that "Loki" Season Two promises. The trailer has certainly fueled anticipation, hinting at a thrilling rollercoaster ride of twists and turns that will keep viewers hooked.</p>
+        
+<p>As the MCU continues to expand its multiverse storyline, "Loki" Season Two is sure to play a significant role in shaping the future of Marvel's cinematic and television universe. With its unique blend of humor, drama, and mind-bending concepts, the show has carved a special place in the hearts of fans worldwide.</p>
+        
+<p>So, mark your calendars for October 6th and prepare for an unforgettable journey alongside the God of Mischief. The wait is almost over, and Loki is back to charm, deceive, and captivate us once again. Brace yourselves for a whirlwind of excitement, as we unravel the mysteries of the multiverse in "Loki" Season Two!</p>
+    </div>
+  </div>
+</body>
+<footer class="footer">
+    <div class="containerFooter">
+     <div class="rowFooter">
+       <div class="footer-col">
+         <h4>Pages</h4>
+         <ul>
+           <li><a href="marvelnews.html">Home</a></li>
+           <li><a href="upcoming.html">Upcoming Projects</a></li>
+           <li><a href="latest.html">Latest News</a></li>
+           <li><a href="animation.html">Animation</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Projects</h4>
+         <ul>
+           <li><a href="si.html">Secret Invasion</a></li>
+           <li><a href="lk.html">Loki Season 2</a></li>
+           <li><a href="tm.html">The Marvels</a></li>
+           <li><a href="eo.html">Echo</a></li>
+           <li><a href="dp.html">Deadpool 3</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>About Us</h4>
+         <ul>
+           <li><a href="contact.html">Contact Us</a></li>
+           <li><a href="#">Donate</a></li>
+           <li><a href="privacy.html">Privacy Policy</a></li>
+           <li><a href="tnc.html">Terms and Conditions</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Follow us</h4>
+         <div class="social-links">
+           <a href="contact.html"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(980%,-225%);">
+         </div>
+       </div>
+     </div>
+    </div>
+  </footer>
+  </html>
