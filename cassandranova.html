@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stay up-to-date with the latest news and upcoming projects in the Marvel Cinematic Universe (MCU) at MCU Hub. Explore upcoming movies, TV shows, and animation. Get the latest updates on Secret Invasion, Loki: Season 2, The Marvels, Deadpool 3, and more. Follow us for exciting MCU content.">
+  <meta name="title" content="MCU Hub">
+  <title>Emma Corrin will be playing Cassandra Nova in Deadpool 3</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4776915864879968"
+     crossorigin="anonymous"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <header>
+    <img  class="logo" onclick='window.location.href="marvelnews.html"' src="logo (1).png"></img>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+        
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+  const website = ["si.html", 
+  "lk.html",
+  "tm.html",
+  "eo.html",
+  "ir.html",
+  "dp.html",
+  "dd.html",
+  "ca.html",
+  "ag.html",
+  "tb.html",
+  "bl.html",
+  "ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+    </script>
+  </main>
+  <div class="news-section" style="height: max-content;">
+    <h2>Emma Corrin will be playing Cassandra Nova in Deadpool 3</h2> 
+    <h6 style="z-index: 2;transform: translate(520px,340px); width: fit-content;">Photo: Marvel Studios</h6><img class="front-img" src="cassandra.jpg">
+    <div class="article" style="margin-left: 100px; margin-right: 100px; margin-top: 30px;"><p>With less than a year to go until the highly anticipated release of "Deadpool 3," the rumor mill is working overtime, churning out tantalizing speculations that have fans buzzing with excitement. The latest whispers, sourced from several industry insiders and scoopers, suggest that Emma Corrin could be joining the Marvel Cinematic Universe as Cassandra Nova. If true, this casting choice could potentially introduce a new layer of complexity and intrigue to the irreverent world of Deadpool.</p>
+
+    <p>Cassandra Nova, for those unfamiliar with the character's comic book origins, is a formidable telepathic mutant and a major antagonist in the X-Men mythos. Created by Grant Morrison and Frank Quitely, Cassandra Nova is actually a psychic entity that was born as a result of Charles Xavier's suppressed dark impulses when he was still in the womb. This malevolent being possesses a genius-level intellect and possesses powerful psychic abilities, making her a formidable foe for any superhero.</p>
+        
+<p>In the comics, Cassandra Nova's ultimate goal is the annihilation of mutantkind and the destruction of Charles Xavier and the X-Men. She orchestrates elaborate schemes to undermine mutant rights and manipulate events to her advantage. Her complex and enigmatic nature, combined with her raw power, has made her a memorable and chilling adversary.</p>
+        
+<p>Now, let's consider the intriguing possibility of Emma Corrin taking on the role of Cassandra Nova in "Deadpool 3." Corrin, who gained widespread acclaim for her portrayal of Princess Diana in Netflix's "The Crown," has demonstrated her acting prowess and ability to tackle complex characters. If these rumors hold true, her casting could bring a fresh and dynamic dimension to the Marvel universe.</p>
+        
+<p>Considering Deadpool's penchant for breaking the fourth wall and his unapologetically zany antics, Cassandra Nova's inclusion could lead to a mind-bending narrative. Imagine the interplay between Deadpool's irreverent humor and Cassandra Nova's calculating malevolence – a clash of personalities and powers that could drive the story to unexpected and entertaining places.</p>
+        
+<p>Furthermore, it's worth noting that "Deadpool 3" seems poised to deliver an ensemble of villains, ramping up the excitement even further. Multiple antagonists could potentially create a more intricate and layered storyline, challenging Deadpool in ways he has never encountered before. The prospect of a rogues' gallery of villains adds to the anticipation surrounding the film and raises questions about how Deadpool will navigate this treacherous terrain.</p>
+        
+<p>As we eagerly count down the months until "Deadpool 3" hits theaters, the rumor mill continues to churn, keeping fans engaged and speculating. While nothing is set in stone until confirmed by the studio, the idea of Emma Corrin as Cassandra Nova and the inclusion of multiple villains injects a fresh dose of intrigue into the upcoming film. Will Deadpool face his most formidable challenges yet, and how will he outwit and outsmart this new cast of adversaries? The answers are tantalizingly close, and fans can hardly wait to witness the Merc with a Mouth's next uproarious and action-packed escapade.</p>
+    </div>
+  </div>
+</body>
+<footer class="footer">
+    <div class="containerFooter">
+     <div class="rowFooter">
+       <div class="footer-col">
+         <h4>Pages</h4>
+         <ul>
+           <li><a href="marvelnews.html">Home</a></li>
+           <li><a href="upcoming.html">Upcoming Projects</a></li>
+           <li><a href="latest.html">Latest News</a></li>
+           <li><a href="animation.html">Animation</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Projects</h4>
+         <ul>
+           <li><a href="si.html">Secret Invasion</a></li>
+           <li><a href="lk.html">Loki Season 2</a></li>
+           <li><a href="tm.html">The Marvels</a></li>
+           <li><a href="eo.html">Echo</a></li>
+           <li><a href="dp.html">Deadpool 3</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>About Us</h4>
+         <ul>
+           <li><a href="contact.html">Contact Us</a></li>
+           <li><a href="#">Donate</a></li>
+           <li><a href="#">Privacy Policy</a></li>
+           <li><a href="tnc.html">Terms and Conditions</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Follow us</h4>
+         <div class="social-links">
+           <a href="contact.html"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(980%,-225%);">
+         </div>
+       </div>
+     </div>
+    </div>
+ </footer>
+</html>
