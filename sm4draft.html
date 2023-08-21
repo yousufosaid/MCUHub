@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover exciting details about the upcoming second season of Loki! Get a sneak peek into the adventures that await the God of Mischief as he navigates through time and faces new challenges. Loki Season Two is set to premiere on October 6th. Learn more at MCU Hub.">
+  <title>The first draft is Spider-Man 4 is ready</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4776915864879968"
+     crossorigin="anonymous"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <header>
+    <img  class="logo" onclick='window.location.href="marvelnews.html"' src="logo (1).png"></img>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+        
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+  const website = ["si.html", 
+  "lk.html",
+  "tm.html",
+  "eo.html",
+  "ir.html",
+  "dp.html",
+  "dd.html",
+  "ca.html",
+  "ag.html",
+  "tb.html",
+  "bl.html",
+  "ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+    </script>
+  </main>
+  <div class="news-section" style="height: max-content;">
+    <h2>The first draft is Spider-Man 4 is ready</h2> 
+    <h6 style="z-index: 2;transform: translate(520px,340px); width: fit-content;">Photo: Marvel Studios</h6><img class="front-img" src="tom-holland-spiderman-no-way-home-yh.jpg">
+    <div class="article" style="margin-left: 100px; margin-right: 100px; margin-top: 30px;"><p>Fans of the Marvel Cinematic Universe and Spider-Man franchise have been eagerly awaiting news about the upcoming Spider-Man 4 movie starring Tom Holland. Recent developments have brought both excitement and uncertainty, as Tom Holland confirmed discussions about reprising his role as Spider-Man, while industry-wide strikes cast a shadow over the release date timeline. In this article, we delve into the latest updates on the highly anticipated Spider-Man 4 film, addressing the confirmed talks, the impact of industry strikes, and intriguing rumors surrounding the script and its potential release window.</p>
+
+    <p>A few weeks ago, Tom Holland set the internet ablaze with his confirmation that he has engaged in talks for the fourth installment of the Spider-Man series. As the beloved actor who breathed new life into the iconic superhero, Holland's statement was met with enthusiastic responses from fans worldwide. While the details of these discussions remain confidential, Holland's involvement in the project has rekindled hope for an exciting continuation of Spider-Man's adventures.</p>
+
+    <p>Despite the excitement stirred by Tom Holland's confirmation, the release date of Spider-Man 4 remains shrouded in uncertainty. The ongoing SAG-AFTRA (Screen Actors Guild-American Federation of Television and Radio Artists) strike has dealt a blow to the entertainment industry, causing delays and disruptions across various productions. The strike, centered around fair compensation and equitable working conditions for actors, has left several high-profile projects, including Spider-Man 4, in a state of limbo.</p>
+
+    <p>Adding to the anticipation, the latest rumor from the insider source "MyTimeToShineHello" has sparked curiosity among fans. According to the rumor mill, renowned screenwriting duo Chris McKenna and Erik Sommers managed to complete a "very good" first draft of the Spider-Man 4 script before the industry-wide writer strike commenced. While unverified, this rumor raises hopes that the creative process for the film was not only underway but also potentially promising. McKenna and Sommers' previous work on Spider-Man films has earned them praise for their ability to balance action, humor, and character development.</p>
+
+    <p>The actors' strike has created a ripple effect across Hollywood, impacting not only productions but also the release schedules of highly anticipated films like Spider-Man 4. While speculations about the release date are aplenty, it's important to note that the strike's resolution will play a pivotal role in determining when the film can move forward. Industry experts and fans alike are keeping a close eye on developments, hoping for a swift resolution that will allow Spider-Man 4 to progress.</p>
+
+    <p>The Spider-Man 4 movie, starring Tom Holland, holds a special place in the hearts of fans who have followed the character's journey through the Marvel Cinematic Universe. The recent confirmation of talks with Holland has injected fresh excitement into the project. However, the uncertain release date, influenced by the ongoing industry strikes, has introduced a level of unpredictability. Amidst these challenges, rumors of a promising script and the potential for a captivating storyline fuel anticipation for what's to come. As the industry navigates its way through the strikes, fans remain hopeful for a resolution that will pave the way for Spider-Man 4 to swing into action on the big screen.</p>
+    </div>
+  </div>
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4776915864879968"
+     crossorigin="anonymous"></script> -->
+<!-- ad1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4776915864879968"
+     data-ad-slot="6712755848"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></body>
+<footer class="footer">
+    <div class="containerFooter">
+     <div class="rowFooter">
+       <div class="footer-col">
+         <h4>Pages</h4>
+         <ul>
+           <li><a href="marvelnews.html">Home</a></li>
+           <li><a href="upcoming.html">Upcoming Projects</a></li>
+           <li><a href="latest.html">Latest News</a></li>
+           <li><a href="animation.html">Animation</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Projects</h4>
+         <ul>
+           <li><a href="si.html">Secret Invasion</a></li>
+           <li><a href="lk.html">Loki Season 2</a></li>
+           <li><a href="tm.html">The Marvels</a></li>
+           <li><a href="eo.html">Echo</a></li>
+           <li><a href="dp.html">Deadpool 3</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>About Us</h4>
+         <ul>
+           <li><a href="contact.html">Contact Us</a></li>
+           <li><a href="#">Donate</a></li>
+           <li><a href="privacy.html">Privacy Policy</a></li>
+           <li><a href="tnc.html">Terms and Conditions</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Follow us</h4>
+         <div class="social-links">
+           <a href="contact.html"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(980%,-225%);">
+         </div>
+       </div>
+     </div>
+    </div>
+  </footer>
+  </html>
