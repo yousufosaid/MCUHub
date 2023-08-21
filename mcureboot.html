@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover exciting details about the upcoming second season of Loki! Get a sneak peek into the adventures that await the God of Mischief as he navigates through time and faces new challenges. Loki Season Two is set to premiere on October 6th. Learn more at MCU Hub.">
+  <title>Avengers: Secret Wars may reboot the entire MCU</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4776915864879968"
+     crossorigin="anonymous"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <header>
+    <img  class="logo" onclick='window.location.href="marvelnews.html"' src="logo (1).png"></img>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+        
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+  const website = ["si.html", 
+  "lk.html",
+  "tm.html",
+  "eo.html",
+  "ir.html",
+  "dp.html",
+  "dd.html",
+  "ca.html",
+  "ag.html",
+  "tb.html",
+  "bl.html",
+  "ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+    </script>
+  </main>
+  <div class="news-section" style="height: max-content;">
+    <h2>Avengers: Secret Wars may reboot the entire MCU</h2> 
+    <h6 style="z-index: 2;transform: translate(520px,340px); width: fit-content;">Photo: Marvel Studios</h6><img class="front-img" src="Avengers_Secret_Wars_logo.webp">
+    <div class="article" style="margin-left: 100px; margin-right: 100px; margin-top: 30px;"><p>As the Marvel Cinematic Universe (MCU) continues to captivate audiences worldwide with its epic storytelling and interconnected characters, fans have been abuzz with speculation about what lies beyond the highly anticipated film, "Avengers: Secret Wars." This excitement has only been fueled by recent reports suggesting a major reboot of the MCU is on the horizon, signaling significant changes and possibly bidding farewell to some beloved characters.</p>
+
+    <p>For years, fans and industry insiders have discussed the potential directions the MCU could take after the climactic events of "Avengers: Secret Wars." The speculation intensified with the emergence of a reputable scoop that lends credence to the long-standing claim of an impending reboot. While Marvel Studios has not officially confirmed this information, the buzz surrounding the scoop has sent ripples through the fan community, leading to heated discussions and exciting anticipation.</p>
+        
+    <p>If the rumors hold true, "Avengers: Secret Wars" could mark a turning point in the MCU's evolution, leading to a reboot that reshapes the universe as we know it. This would entail revisiting the origins of iconic characters, introducing fresh storylines, and potentially retiring certain heroes who have played integral roles in the franchise. The notion that this could be the last time we see some of our favorite MCU characters, as well as the Fox X-Men heroes who joined the universe, has stirred mixed emotions among fans.</p>
+        
+    <p>The idea of a reboot opens up a treasure trove of possibilities for Marvel Studios to explore. Here are some potential avenues the MCU could venture into after "Avengers: Secret Wars":</p>
+        
+    <p>1.New Heroes and Origins: A reboot would provide an opportunity to reintroduce classic heroes with updated origins, allowing for more intricate storytelling and character development. New actors could take on the roles of familiar characters, infusing fresh energy and perspectives into the roles.</p>
+        
+    <p>2.Multiverse Exploration: Marvel's concept of the multiverse has already been teased in projects like "Doctor Strange in the Multiverse of Madness" and the Disney+ series "Loki." A reboot could delve deeper into the multiverse, opening the door to alternate realities, unexpected team-ups, and mind-bending crossovers.</p>
+        
+    <p>3.Legacy Characters: With established heroes potentially stepping aside, the MCU could explore the concept of legacy characters. Characters inspired by or directly related to the original heroes could take up their mantles, carrying on their legacies while forging their own paths.</p>
+        
+    <p>4.Villain-Centric Storylines: The MCU has a wealth of compelling villains who could take center stage in their own stories. A reboot might provide an opportunity to explore the motivations, backstories, and complex dynamics of iconic antagonists.</p>
+        
+    <p>5.Genre Diversification: Marvel Studios has already showcased its ability to tackle various genres within the superhero framework. A reboot could push these boundaries further, allowing for more experimental storytelling styles and genres.</p>
+        
+    <p>6.Event Crossovers: Just as "Avengers: Secret Wars" is anticipated to be a massive crossover event, future reboots could introduce more grand-scale crossovers that bring together characters from different corners of the MCU.</p>
+        
+    <p>7.Exploring the Past and Future: The MCU could use a reboot to explore the past and future of its universe. Prequels, sequels, and time-travel narratives could offer insight into untold stories and the consequences of characters' actions.</p>
+        
+    <p>While the speculation and rumors have fans buzzing, it's important to remember that plans within the entertainment industry are subject to change. Marvel Studios is known for its ability to surprise and innovate, so the future of the MCU remains excitingly uncertain.</p>
+        
+    <p>As fans eagerly await the release of "Avengers: Secret Wars" and the potential reboot that may follow, the speculation serves as a testament to the enduring impact of the MCU on popular culture. Whether the rumors pan out or take an unexpected turn, one thing is certain: the MCU's journey is far from over, and the possibilities for its future are as limitless as the multiverse itself.</p>
+    </div>
+  </div>
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4776915864879968"
+     crossorigin="anonymous"></script> -->
+<!-- ad1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4776915864879968"
+     data-ad-slot="6712755848"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></body>
+<footer class="footer">
+    <div class="containerFooter">
+     <div class="rowFooter">
+       <div class="footer-col">
+         <h4>Pages</h4>
+         <ul>
+           <li><a href="marvelnews.html">Home</a></li>
+           <li><a href="upcoming.html">Upcoming Projects</a></li>
+           <li><a href="latest.html">Latest News</a></li>
+           <li><a href="animation.html">Animation</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Projects</h4>
+         <ul>
+           <li><a href="si.html">Secret Invasion</a></li>
+           <li><a href="lk.html">Loki Season 2</a></li>
+           <li><a href="tm.html">The Marvels</a></li>
+           <li><a href="eo.html">Echo</a></li>
+           <li><a href="dp.html">Deadpool 3</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>About Us</h4>
+         <ul>
+           <li><a href="contact.html">Contact Us</a></li>
+           <li><a href="#">Donate</a></li>
+           <li><a href="privacy.html">Privacy Policy</a></li>
+           <li><a href="tnc.html">Terms and Conditions</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Follow us</h4>
+         <div class="social-links">
+           <a href="contact.html"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(980%,-225%);">
+         </div>
+       </div>
+     </div>
+    </div>
+  </footer>
+  </html>
