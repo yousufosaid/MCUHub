@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the latest updates on Spider-Man 4 starring Tom Holland: confirmed talks, industry strikes' impact, script rumors, and potential release window. Stay informed with the most anticipated Marvel film news.">
+  <title>Marvel will take part in Disney's D23 event</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4776915864879968"
+     crossorigin="anonymous"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <header>
+    <img  class="logo" onclick='window.location.href="marvelnews.html"' src="logo (1).png"></img>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+        
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+  const website = ["si.html", 
+  "lk.html",
+  "tm.html",
+  "eo.html",
+  "ir.html",
+  "dp.html",
+  "dd.html",
+  "ca.html",
+  "ag.html",
+  "tb.html",
+  "bl.html",
+  "ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+    </script>
+  </main>
+  <div class="news-section" style="height: max-content;">
+    <h2>Marvel will take part in Disney's D23 event</h2> 
+    <h6 style="z-index: 2;transform: translate(520px,340px); width: fit-content;">Photo: Marvel Studios</h6><img class="front-img" src="tom-holland-spiderman-no-way-home-yh.jpg">
+    <div class="article" style="margin-left: 100px; margin-right: 100px; margin-top: 30px;"><p>In an announcement that has sent ripples of excitement across the entertainment world, Disney has revealed that its highly anticipated D23 Expo will take place from September 8th to September 10th this year. The event promises to be a treasure trove of surprises for fans, especially those in the Marvel universe. Marvel's participation in this year's D23 event is creating a buzz as enthusiasts are eagerly awaiting news about the studio's upcoming projects.</p>
+
+        <p>Marvel Studios, known for its breathtaking superhero sagas, has been a dominant force in the entertainment industry. However, a prolonged period of silence followed the writers and actors strike, which left fans yearning for updates on their favorite heroes' future adventures. Now, with D23 just around the corner, expectations are soaring as Marvel prepares to quench this thirst for information.</p>
+        
+        <p>Historically, D23 events have served as platforms for Marvel Studios to drop major announcements, teasers, and exclusive content. Previous expos have witnessed the unveiling of upcoming movie and TV show line-ups, often leading to a collective gasp of awe from the audience. This year's event is poised to be no different, with a focus on revealing glimpses of what lies ahead in the Marvel Cinematic Universe.</p>
+        
+    <p>Fans recall the thrilling moments from previous D23 expos where Marvel stole the spotlight. The unveiling of the cast of "Black Panther" in 2015 was met with resounding applause, setting the tone for the groundbreaking film. Similarly, the event in 2019 left fans ecstatic with updates on series like "WandaVision" and "Loki," offering tantalizing teasers that left audiences yearning for more.</p>
+        
+<p>As fans eagerly anticipate the upcoming D23 event, their wish lists are filled with hopes for exciting revelations. First and foremost, many are crossing their fingers for a first look at "Captain America 4." The legacy of Captain America is primed for a new chapter, and D23 could be the perfect stage for Marvel to provide the first look at Anthony mackies first official outing as Captain America. Another hotly anticipated announcement is related to "Deadpool 3," which has been the subject of much speculation. Could this event finally shed light on the Merc with a Mouth's future endeavors in the MCU?</p>
+        
+<p>Adding to the excitement, rumors of a final trailer for "Loki" Season 2 are making the rounds. After the breathtaking twists and turns of the first season, fans are eager to catch a glimpse of what mischief the God of Mischief will be up to next.</p>
+        
+<p>However, it's important to temper expectations, as surprises are a hallmark of such events. Marvel has a knack for delivering jaw-dropping moments that nobody saw coming, and D23 2023 is expected to be no different.</p>
+        
+<p>In conclusion, Disney's D23 Expo 2023 promises to be a celebration of all things Disney, and the Marvel Cinematic Universe is set to be a major player in this grand event. With the promise of long-awaited updates and sneak peeks into upcoming projects, fans are eagerly counting down the days until September 8th. Whether it's "Captain America 4," "Deadpool 3," or "Loki" Season 2, one thing is certain: the Marvel magic at D23 will leave fans exhilarated and craving more superhero adventures.</p>
+    </div>
+  </div>
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4776915864879968"
+     crossorigin="anonymous"></script> -->
+<!-- ad1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4776915864879968"
+     data-ad-slot="6712755848"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></body>
+<footer class="footer">
+    <div class="containerFooter">
+     <div class="rowFooter">
+       <div class="footer-col">
+         <h4>Pages</h4>
+         <ul>
+           <li><a href="marvelnews.html">Home</a></li>
+           <li><a href="upcoming.html">Upcoming Projects</a></li>
+           <li><a href="latest.html">Latest News</a></li>
+           <li><a href="animation.html">Animation</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Projects</h4>
+         <ul>
+           <li><a href="si.html">Secret Invasion</a></li>
+           <li><a href="lk.html">Loki Season 2</a></li>
+           <li><a href="tm.html">The Marvels</a></li>
+           <li><a href="eo.html">Echo</a></li>
+           <li><a href="dp.html">Deadpool 3</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>About Us</h4>
+         <ul>
+           <li><a href="contact.html">Contact Us</a></li>
+           <li><a href="#">Donate</a></li>
+           <li><a href="privacy.html">Privacy Policy</a></li>
+           <li><a href="tnc.html">Terms and Conditions</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Follow us</h4>
+         <div class="social-links">
+           <a href="contact.html"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(980%,-225%);">
+         </div>
+       </div>
+     </div>
+    </div>
+  </footer>
+  </html>
