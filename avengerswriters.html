@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the latest developments in the Marvel Cinematic Universe amidst the writers and actors strike. Explore the surprising reshuffle at Marvel Studios, potential impacts on upcoming Avengers films, and the influence of Bob Iger's return. Uncover insights into the firing of writers Jeff Loveness and Michael Waldron, and how this strategic move could shape the MCU's narrative landscape. Dive into the article now for a comprehensive analysis of these changes and their implications for the future of your favorite superhero franchise."">
+  <title>Both the writers for Avengers: The Kang Dynasty and Avengers: Secret Wars have been fired</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4776915864879968"
+     crossorigin="anonymous"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <header>
+    <img  class="logo" onclick='window.location.href="marvelnews.html"' src="logo (1).png"></img>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+        
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+  const website = ["si.html", 
+  "lk.html",
+  "tm.html",
+  "eo.html",
+  "ir.html",
+  "dp.html",
+  "dd.html",
+  "ca.html",
+  "ag.html",
+  "tb.html",
+  "bl.html",
+  "ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+    </script>
+  </main>
+  <div class="news-section" style="height: max-content;">
+    <h2>Both the writers for Avengers: The Kang Dynasty and Avengers: Secret Wars have been fired</h2> 
+    <h6 style="z-index: 2;transform: translate(520px,340px); width: fit-content;">Photo: Marvel Studios</h6><img class="front-img" src="FYZLUXSVUAA2pxc.jpg">
+    <div class="article" style="margin-left: 100px; margin-right: 100px; margin-top: 30px;"><p>In a surprising turn of events, major news has emerged from the Marvel Cinematic Universe (MCU) despite the ongoing writers and actors strike. Amidst the chaos of the industry's labor disputes, internet scoopers have reported a significant shakeup in the creative teams of upcoming MCU films, particularly affecting the highly anticipated projects, "Avengers: The Kang Dynasty" and "Avengers Secret Wars." The reported firing of writers Jeff Loveness and Michael Waldron has sparked speculation about a larger reshuffle happening at Marvel Studios since the return of Bob Iger. These changes could potentially have a profound impact on the MCU's trajectory moving forward.</p>
+
+    <p>The return of Bob Iger to Marvel Studios has signaled a period of transformation and recalibration. His reentry into the scene comes at a time when the industry is grappling with significant labor disputes, and studios are facing mounting pressure to manage their franchises effectively. This recent shakeup in the creative teams could be part of a larger strategic effort to realign the MCU's direction in light of the challenges posed by the ongoing strike.</p>
+
+    <p>The departure of key writers like Jeff Loveness and Michael Waldron from projects as significant as the "Avengers: The Kang Dynasty" and "Avengers Secret Wars" suggests that Marvel Studios is determined to maintain a high level of creative vision and cohesion in its storytelling. These films are not just tentpole releases; they're expected to shape the narrative landscape of the MCU for years to come. The abrupt change in writers raises questions about how the studio plans to navigate the challenges posed by the ongoing strike without compromising the quality of their storytelling.</p>
+
+    <p>As fans speculate about who could fill the void left by Loveness and Waldron, the names of Christopher Markus and Stephen McFeely come to the forefront. The dynamic duo behind the monumental "Avengers: Infinity War" and "Avengers: Endgame" demonstrated their prowess in weaving complex narratives while respecting the established characters and story arcs. Their return to the MCU, particularly in the midst of a creative upheaval, could provide the stability and creative ingenuity needed to bring these ambitious projects to fruition.</p>
+
+    <p>The uncertain landscape of the writers and actors strike has undoubtedly posed challenges for Marvel Studios. Yet, the studio's ability to adapt and make strategic decisions amid this turmoil demonstrates its commitment to delivering the best possible content to its fans. As the MCU moves forward, it's crucial for the studio to balance the demands of maintaining creative excellence with the evolving industry landscape.</p>
+        
+    <p>In conclusion, the recent firing of writers Jeff Loveness and Michael Waldron amid the ongoing writers and actors strike has ignited discussions about Marvel Studios' strategic response under the influence of Bob Iger's return. These changes could potentially reshape the creative direction of the MCU, with lasting implications for the narrative landscape. As fans await further updates, the studio's capacity to adapt and thrive in uncertain times is a testament to its dedication to storytelling excellence.</p>
+    </div>
+  </div>
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4776915864879968"
+     crossorigin="anonymous"></script> -->
+<!-- ad1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4776915864879968"
+     data-ad-slot="6712755848"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></body>
+<footer class="footer">
+    <div class="containerFooter">
+     <div class="rowFooter">
+       <div class="footer-col">
+         <h4>Pages</h4>
+         <ul>
+           <li><a href="marvelnews.html">Home</a></li>
+           <li><a href="upcoming.html">Upcoming Projects</a></li>
+           <li><a href="latest.html">Latest News</a></li>
+           <li><a href="animation.html">Animation</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Projects</h4>
+         <ul>
+           <li><a href="si.html">Secret Invasion</a></li>
+           <li><a href="lk.html">Loki Season 2</a></li>
+           <li><a href="tm.html">The Marvels</a></li>
+           <li><a href="eo.html">Echo</a></li>
+           <li><a href="dp.html">Deadpool 3</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>About Us</h4>
+         <ul>
+           <li><a href="contact.html">Contact Us</a></li>
+           <li><a href="#">Donate</a></li>
+           <li><a href="privacy.html">Privacy Policy</a></li>
+           <li><a href="tnc.html">Terms and Conditions</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Follow us</h4>
+         <div class="social-links">
+           <a href="contact.html"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(980%,-225%);">
+         </div>
+       </div>
+     </div>
+    </div>
+  </footer>
+  </html>
