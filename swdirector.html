@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exciting news for Marvel fans: Sam Raimi, known for directing Doctor Strange in the Multiverse of Madness, is rumored to be the top pick for directing Avengers: Secret Wars. Explore Raimi's Marvel legacy, potential cameos, and the great expectations for this epic MCU event">
+  <title>Sam Raimi is Marvels first choice to direct Avengers: Secret Wars</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4776915864879968"
+     crossorigin="anonymous"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <header>
+    <img  class="logo" onclick='window.location.href="index.html"' src="logo (1).png"></img>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+        
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+  const website = ["si.html", 
+  "lk.html",
+  "tm.html",
+  "eo.html",
+  "ir.html",
+  "dp.html",
+  "dd.html",
+  "ca.html",
+  "ag.html",
+  "tb.html",
+  "bl.html",
+  "ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+    </script>
+  </main>
+  <div class="news-section" style="height: max-content;">
+    <h2>Sam Raimi is Marvels first choice to direct Avengers: Secret Wars</h2> 
+    <h6 style="z-index: 2;transform: translate(520px,340px); width: fit-content;">Photo: Marvel Studios</h6><img class="front-img" src="1260931.jpg">
+    <div class="article" style="margin-left: 100px; margin-right: 100px; margin-top: 30px;"><p>In a recent scoop that has sent shockwaves through the Marvel Cinematic Universe (MCU) fandom, the internet insider MyTimeToShineHello has claimed that Sam Raimi, renowned for his direction of Doctor Strange in the Multiverse of Madness, is the top candidate to helm the highly anticipated Avengers: Secret Wars movie. While this news has yet to be officially confirmed by Marvel Studios, it's worth exploring the exciting possibilities that Raimi's involvement could bring to this monumental cinematic event.</p>
+
+    <p>Sam Raimi is no stranger to the world of Marvel, having directed the immensely popular Spider-Man trilogy from 2002 to 2007, starring Tobey Maguire as the titular hero. These films, which were praised for their dynamic action sequences and compelling character development, helped pave the way for the modern era of superhero blockbusters.</p>
+        
+    <p>Raimi's ability to balance the spectacle of superhero storytelling with the emotional depth of the characters is something that fans have admired. His tenure with Marvel was marked by the enduring popularity of his Spider-Man movies, making him a fitting choice to take on another iconic Marvel team – the Avengers.</p>
+
+    <p>If Raimi indeed takes the director's chair for Avengers: Secret Wars, his influence on the project could be transformative. His knack for blending humor, heart, and high-stakes action could be the perfect formula for a movie that is expected to be a game-changer in the MCU.</p>
+        
+    <p>Raimi's experience with ensemble casts, as evidenced by his work on the Spider-Man trilogy and Doctor Strange in the Multiverse of Madness, could serve him well in orchestrating the interactions among Earth's mightiest heroes. The Avengers: Secret Wars promises to bring together characters from across the MCU, offering a rich tapestry of personalities and powers to explore.</p>
+
+    <p>The title "Secret Wars" alone has fans buzzing with anticipation. The Secret Wars storyline from the comics is a beloved and iconic arc that sees heroes and villains transported to a distant planet to battle it out. The possibilities for epic battles, surprising alliances, and character development are endless.</p>
+        
+    <p>Marvel fans are also speculating about the potential cameos in this mega-event. Rumors suggest appearances by Robert Downey Jr. (Iron Man), Hugh Jackman (Wolverine), Tobey Maguire (Spider-Man), and Andrew Garfield (Spider-Man). While these cameo appearances remain unconfirmed, the mere possibility of such a star-studded lineup has fans giddy with excitement.</p>
+
+    <p>One of the most enticing aspects of Avengers: Secret Wars is that it ushers in an entirely new era for the MCU. While previous phases have had their own overarching narratives, this movie is expected to redefine the future of Marvel storytelling. It's an opportunity to introduce fresh characters, explore different dimensions, and establish new dynamics among the heroes and villains.</p>
+        
+        <p>In conclusion, the potential involvement of Sam Raimi in directing Avengers: Secret Wars, following his work on Doctor Strange in the Multiverse of Madness, is a thrilling prospect for Marvel fans. His proven track record with the Spider-Man trilogy and his ability to craft engaging superhero narratives make him an exciting choice. As we await official confirmation from Marvel Studios, the anticipation for what this movie could bring to the MCU is palpable. With rumored cameos and the promise of epic battles, Avengers: Secret Wars has the potential to be a cinematic event unlike any other in the superhero genre. Marvel enthusiasts will undoubtedly be keeping a close eye on developments in the coming months.</p>
+    </div>
+  </div>
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4776915864879968"
+     crossorigin="anonymous"></script> -->
+<!-- ad1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4776915864879968"
+     data-ad-slot="6712755848"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></body>
+<footer class="footer">
+    <div class="containerFooter">
+     <div class="rowFooter">
+       <div class="footer-col">
+         <h4>Pages</h4>
+         <ul>
+           <li><a href="marvelnews.html">Home</a></li>
+           <li><a href="upcoming.html">Upcoming Projects</a></li>
+           <li><a href="latest.html">Latest News</a></li>
+           <li><a href="animation.html">Animation</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Projects</h4>
+         <ul>
+           <li><a href="si.html">Secret Invasion</a></li>
+           <li><a href="lk.html">Loki Season 2</a></li>
+           <li><a href="tm.html">The Marvels</a></li>
+           <li><a href="eo.html">Echo</a></li>
+           <li><a href="dp.html">Deadpool 3</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>About Us</h4>
+         <ul>
+           <li><a href="contact.html">Contact Us</a></li>
+           <li><a href="#">Donate</a></li>
+           <li><a href="privacy.html">Privacy Policy</a></li>
+           <li><a href="tnc.html">Terms and Conditions</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Follow us</h4>
+         <div class="social-links">
+           <a href="contact.html"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(980%,-225%);">
+         </div>
+       </div>
+     </div>
+    </div>
+  </footer>
+  </html>
