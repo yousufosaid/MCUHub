@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the buzz around Hugh Jackman's potential return as Wolverine in Avengers: Secret Wars, a move that could reshape the Marvel Cinematic Universe. Delve into the surprising twist of fate, implications for the MCU, and the electrifying chemistry with Deadpool in this exciting speculation-packed article.">
+  <title>Deadpool 3 will lead directly into Secret Wars</title>
+  <link rel="stylesheet" href="marvelstyle.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4776915864879968"
+     crossorigin="anonymous"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NHHZ4JRC34"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NHHZ4JRC34');
+</script>
+  <header>
+    <img  class="logo" onclick='window.location.href="index.html"' src="logo (1).png"></img>
+    <nav>
+      <ul>      
+        <li><a class="upcoming" href="upcoming.html">Upcoming Movies & TV Shows</a></li>
+        <li><a class="Latest" href="latest.html">Latest News</a></li>
+        <li><a class="box" href="boxoffice.html">Box Office</a></li>
+        <li><a class="animation" href="animation.html">Animation</a></li>
+        
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="suggestions-list"></ul>
+    </div>  
+    <button class="search-button" id="button"><img src="2812030-middle.png" height="30px" width="50px"></button>
+         
+  </header>
+</head>
+<body>
+  <main>
+    <script>
+      const marvelProjects = [
+     "Secret Invasion ", 
+    "Loki: Season 2 ",
+    "The Marvels ",
+    "Echo ",
+    "Ironheart",
+    "Deadpool 3 ",
+    "Daredevil: Born Again ",
+    "Captain America: Brave New World",
+    "Agatha: Coven of Chaos ",
+    "Thunderbolts ",
+    "Blade ",
+    "Fantastic Four"
+  ];
+
+  const website = ["si.html", 
+  "lk.html",
+  "tm.html",
+  "eo.html",
+  "ir.html",
+  "dp.html",
+  "dd.html",
+  "ca.html",
+  "ag.html",
+  "tb.html",
+  "bl.html",
+  "ff.html",
+]
+  
+  const searchInput = document.getElementById("search-input");
+  const suggestionsList = document.getElementById("suggestions-list");
+  const searchButton = document.getElementById("button");
+
+  
+  searchInput.addEventListener("input", function() {
+    const searchQuery = this.value.toLowerCase();
+    const matchedProjects = marvelProjects.filter(project => project.toLowerCase().includes(searchQuery));
+    
+    suggestionsList.innerHTML = "";
+    
+    matchedProjects.forEach(project => {
+      const listItem = document.createElement("li");
+      listItem.textContent = project;
+      listItem.addEventListener("click", function() {
+        for(var i =0; i<= website.length+1; i++){
+          if(project == marvelProjects[i]){
+            window.location.href=website[i]
+          }
+        }
+      });
+      suggestionsList.appendChild(listItem);
+    });
+  
+    if (matchedProjects.length > 0) {
+      suggestionsList.style.display = "block";
+    } else {
+      suggestionsList.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target)) {
+      suggestionsList.innerHTML = "";
+      suggestionsList.style.display = "none";
+    }
+  });
+  
+    </script>
+  </main>
+  <div class="news-section" style="height: max-content;">
+    <h2>Deadpool 3 will lead directly into Secret Wars</h2> 
+    <h6 style="z-index: 2;transform: translate(660%,2610%); width: fit-content;">Photo: Marvel Studios</h6><img class="front-img" src="images.jpg">
+    <div class="article" style="margin-left: 100px; margin-right: 100px; margin-top: 30px;"><p>In the ever-evolving world of comic book adaptations, the latest rumors swirling around Deadpool 3 are enough to send any fan's excitement skyrocketing. According to scooper extraordinaire, the ComixKid, it seems that Deadpool 3 could be the movie that paves the way for one of the most anticipated Marvel events in recent memory: Secret Wars. But that's not all; brace yourselves, as the rumor mill has it that none other than Hugh Jackman might reprise his iconic role as Wolverine. Hold on tight because we're diving into the speculation and exploring how this could all unfold, including the intriguing role of Loki Season 2.</p>
+
+        <p>The ComixKid's rumor mill suggests that Deadpool 3 will serve as a significant stepping stone toward the monumental Secret Wars storyline. For comic aficionados, Secret Wars is a game-changing event that promises to reshape the Marvel Cinematic Universe (MCU) as we know it. In this storyline, various realities and characters collide in a colossal battle known as Battleworld, where heroes and villains from across the multiverse clash in an epic showdown. But how could Deadpool 3 fit into this grand narrative?</p>
+
+        <p>One of the most electrifying aspects of this rumor is the potential return of Hugh Jackman as Wolverine. Jackman's portrayal of the clawed mutant has become iconic, and fans have longed for his return to the MCU. Deadpool 3 could serve as the perfect vehicle to reintroduce this beloved character, setting the stage for his involvement in Secret Wars. Deadpool's penchant for breaking the fourth wall could be used ingeniously to explain Jackman's reappearance, making it a seamless transition for both die-hard fans and newcomers.</p>
+
+    <p>The ComixKid suggests that the Time Variance Authority (TVA), which we first encountered in the Disney+ series Loki, will play a pivotal role in Deadpool 3. The TVA's mission to prune alternate realities and variants could be central to the storyline. Perhaps Deadpool's antics inadvertently attract the TVA's attention, leading to the collection of characters from various timelines. This would be a masterstroke, bridging the gap between Loki's multiverse setup and Deadpool's zany antics.</p>
+
+    <p>The heart of Secret Wars is Battleworld, a patchwork planet where different Marvel realities collide. If Deadpool 3 is indeed the precursor to this monumental event, we can expect Battleworld to be a chaotic and spectacular battleground. With Deadpool's unpredictable nature and a roster that includes mutants, Avengers, and more, the stage is set for a colossal showdown. The clash of characters and worlds promises to be a visual and narrative spectacle unlike anything we've seen in the MCU.</p>
+
+    <p>Loki Season 2, which has been confirmed, could play a pivotal role in weaving this intricate narrative tapestry. As we delve deeper into the multiverse with Loki and Sylvie, their adventures could uncover crucial elements that tie directly into Deadpool 3 and Secret Wars. The TVA, Kang the Conqueror, and the nature of reality itself might all intersect in a way that sets the stage for the upcoming cinematic extravaganza.</p>
+
+    <p>While these rumors are incredibly tantalizing, it's important to remember that they are still speculative at this stage. However, the potential of Deadpool 3 leading to Secret Wars, with Wolverine's return and the TVA's involvement, is a storyline that would leave any Marvel fan brimming with excitement. As we eagerly await official announcements, it's evident that the MCU is on the cusp of something truly spectacular. Deadpool, Wolverine, and the entire Marvel multiverse are ready to collide, and we can't wait to see how it all plays out on the big screen. Stay tuned for updates, true believers!</p>
+    </div>
+  </div>
+  <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4776915864879968"
+     data-ad-slot="6712755848"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+<footer class="footer">
+    <div class="containerFooter">
+     <div class="rowFooter">
+       <div class="footer-col">
+         <h4>Pages</h4>
+         <ul>
+           <li><a href="marvelnews.html">Home</a></li>
+           <li><a href="upcoming.html">Upcoming Projects</a></li>
+           <li><a href="latest.html">Latest News</a></li>
+           <li><a href="animation.html">Animation</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Projects</h4>
+         <ul>
+           <li><a href="si.html">Secret Invasion</a></li>
+           <li><a href="lk.html">Loki Season 2</a></li>
+           <li><a href="tm.html">The Marvels</a></li>
+           <li><a href="eo.html">Echo</a></li>
+           <li><a href="dp.html">Deadpool 3</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>About Us</h4>
+         <ul>
+           <li><a href="contact.html">Contact Us</a></li>
+           <li><a href="#">Donate</a></li>
+           <li><a href="privacy.html">Privacy Policy</a></li>
+           <li><a href="tnc.html">Terms and Conditions</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Follow us</h4>
+         <div class="social-links">
+           <a href="contact.html"></a><img src="email.jpg" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://twitter.com/themcu_hub"></a><img src="580b57fcd9996e24bc43c53e.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="https://www.instagram.com/the.mcu.hub/"></a><img src="027712250a632b2e6f63c5466b792494.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(-150%,-100%);">
+           <a href="#"></a><img src="threads-logo-E9BA734BF6-seeklogo.com.png" style="height: 20px; width: 20px; z-index: 2; transform: translate(980%,-225%);">
+         </div>
+       </div>
+     </div>
+    </div>
+  </footer>
+  </html>
